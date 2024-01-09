@@ -1,0 +1,17 @@
+#title{
+
+    color: white;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.title-container{
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #072354 ;
+    gap:10px;
+    
+}
