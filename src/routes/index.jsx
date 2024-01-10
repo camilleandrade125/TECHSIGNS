@@ -1,6 +1,7 @@
 import {Routes, Route} from "react-router-dom";
 import LoginPage from "../pages/login";
 import MenuPage from "../pages/menu";
+import ErroPage from "../pages/erro";
 
 
 function MainRoutes(){
@@ -9,7 +10,8 @@ function MainRoutes(){
         <Routes>
 
             <Route path="/login" element={<LoginPage/>}/>
-            <Route path="/menu" element={<MenuPage/>}/>         
+            <Route path="/menu" element={<MenuPage/>}/>   
+            <Route path="/*" element={<ErroPage/>}/>    
             
         </Routes>
     )
