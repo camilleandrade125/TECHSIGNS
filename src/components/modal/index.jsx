@@ -16,7 +16,7 @@ function Modal({ children, visible, onClose }){
 
         </div>
 
-        <h1 id="title">Dados Cadastrais</h1>
+        <h1>Dados Cadastrais</h1>
 
         {children}
 

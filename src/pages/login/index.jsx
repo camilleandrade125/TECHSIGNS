@@ -32,7 +32,7 @@ function LoginPage(){
 
     function entrar(){
 
-        nav('/entrar');
+        nav('/menu');
 
     }
 
@@ -54,19 +54,34 @@ function LoginPage(){
         <>
 
         <Modal visible={showModal} onClose={fecharModal}>
-            
-            <div id="div-modal">  
-            <input placeholder="Nome"/>
-            <input type="email" placeholder="Email"/>
-            <input type="number" placeholder="Idade"/>
-            <input type="password" placeholder="Senha"/>
-            <input type="password"placeholder="Confirmar senha"/>
-            </div>
+        <section className="conteiner-showModal">
+        <label>
+        <p>Nome Completo</p>
+        <input type="text"></input>
+        </label>
 
-            <button id="modal-bts">Cadastrar</button>
-        
-            
+        <label>
+        <p>Email</p>
+        <input type="email" ></input>
+        </label>
 
+        <label>
+        <p>Idade</p>
+        <input type="number"></input>
+        </label>
+
+        <label>
+        <p>Senha</p>
+        <input type="password"></input>
+        </label>
+
+        <label>
+        <p>Confirmar senha</p>
+        <input type="password"></input>
+        </label>
+
+        <button id="modal-bts">Cadastrar</button> 
+        </section>
         </Modal>
 
         <div className="area-container">
@@ -80,9 +95,15 @@ function LoginPage(){
 
                         <p id="texto"><strong>Conecte-se além das palavras!</strong></p>
                         <h1 id="title-login">Login</h1>
+                        <label>
+                        <p>Email</p>
+                        <input onChange={handleEmail} type="email"></input>
+                        </label>
 
-                        <input onChange={handleEmail} type="email" placeholder="Email"></input>
-                        <input onChange={handelSenha} type="password" placeholder="Senha"></input>
+                        <label>
+                        <p>Senha</p>
+                        <input onChange={handelSenha} type="password" ></input>
+                        </label>
 
                         <div className="bts"> 
                         <button onClick={entrar}>Entrar</button>

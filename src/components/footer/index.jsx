@@ -3,7 +3,7 @@ import "./style.css"
 function Footer(){
     return  (
         <div className="title-footer">
-       <h1 id="title"></h1>
+       <h1><p>&copy; 2024 Grupo Seleto</p></h1>
        </div>
     )
 }

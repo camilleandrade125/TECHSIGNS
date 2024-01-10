@@ -1,3 +1,20 @@
+.conteiner-showModal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.conteiner-showModal input {
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding:10px;
+    font-size: 1.1em; 
+    background: transparent;
+}
+
 
 .modal-header{
 
@@ -15,14 +32,14 @@
     top: 50%;
     z-index: 9999;
     left: 50%;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: white;
     transform: translate(-50%, -50%);
     width: auto;
     height: auto;
     padding: 100px;
     backdrop-filter: blur(30px);
-    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.089);
-    border-radius: 20px;
+    box-shadow: 35px 35px 35px 35px rgba(0, 0, 0, 0.089);
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,9 +67,24 @@
 }
 
 #modal-bts{
-    border-radius: 6px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border:none;
+    background-color: black;
+    color:white;
     cursor: pointer;
+    text-align: center;
+
+}
+
+#bt-fechar{
     background-color: white;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
 
 }
 

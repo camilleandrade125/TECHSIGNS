@@ -16,7 +16,7 @@
     border-radius: 100px;
     height: 600px;
     width: 80%;
-    background-color: red;
+   
 }
 
 .inputs{
@@ -33,7 +33,7 @@
 
 #texto{
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: -150px;
     font-family: 'Poppins', sans-serif;
     margin-right: 95px;
@@ -62,18 +62,23 @@
     height: 30px;
     width: 100%;
     margin-right: 90px;
-    gap: 10px;
+    padding: 10px;
+    gap: 15px;
     display: flex;
-    justify-content: center;
-    
-    
+    justify-content: center;   
 }
 
 .bts button{
+
+    background-color: white;
+    color: black;
     cursor: pointer;  
     border-radius: 7px;
+    width: 100px;
+    height: 45px;
 
 }
+
 
 
 
@@ -92,6 +97,20 @@
     height: 600px;
     width: 57%;
 
+}
+
+
+.login-area input{
+    border:none;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding: 5px;
+    font-size: 1.1em; 
+    background: transparent;
+}
+
+.login-area label{
+    color: white;
 }
 
 
