@@ -1,11 +1,10 @@
 .title-footer{
-    margin-top: 20px;
-    padding: 50px;
     text-align: center;
-    font-size: 7px;
+    font-size: 8px;
     color: white;
-    height: 200px;
+    height: 40px;
     width: 100%;
     background-color: #20232e;    
     font-style: italic;  
+    padding-top: 6px;
 }
