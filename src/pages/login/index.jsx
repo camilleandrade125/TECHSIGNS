@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./style.css"
 import Footer from '../../components/footer';
 import Modal from "../../components/modal";
+import HeaderLogin from "../../components/header-login";
 
 function LoginPage(){
 
@@ -52,7 +53,7 @@ function LoginPage(){
     return (
    
         <>
-
+        <HeaderLogin/>
         <Modal visible={showModal} onClose={fecharModal}>
         <section className="conteiner-showModal">
         <label>
@@ -118,7 +119,7 @@ function LoginPage(){
                 </div>
 
         </div>
-
+            
             <Footer/>
         </>
 

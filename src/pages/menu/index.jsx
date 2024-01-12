@@ -2,13 +2,16 @@
 import "./style.css"
 
 import Menu from "../../components/menu-componente"
+import Header  from "../../components/header"
+import Footer from "../../components/footer"
 
 function MenuPage(){
 
     return(
-        <>
-            <h1>Este é o menu page</h1>
+        <> 
+            <Header/>
             <Menu/>
+            <Footer/>
         </>
     )
 

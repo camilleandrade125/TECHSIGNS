@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import "./style.css"
 import img_logo_text from '../../../public/TECHSIGNS!-ESCRITO.png'
 import img_logo from '../../../public/logo-tech.png'
@@ -7,18 +8,26 @@ function Header(){
     <header className="navbar-header">
         <nav>
             <div className="navbar-style">
-                <img className="navbar-logo-text" src={img_logo_text} alt="lodo escrito techsigns"/>
+                <figure>
+                    <Link to="/menu">
+                    <img className="navbar-logo-text" src={img_logo_text} alt="lodo escrito techsigns"/>
+                    </Link>
+                </figure>
             </div>
 
                 <ul className="navbar-list">
-                    <li><a className="navbar-link" href="#">MENU</a></li>
-                    <li><a className="navbar-link"href="#">CONTA</a></li>
-                    <li><a className="navbar-link"href="#">FEEDBACK</a></li>
-                    <li><a className="navbar-link"href="#">SOBRE</a></li>
+                    <li><Link to="/menu" className="navbar-link">MENU</Link></li>
+                    <li><Link to="/conta" className="navbar-link">CONTA</Link></li>
+                    <li><Link to="/feedback" className="navbar-link">FEEDBACK</Link></li>
+                    <li><Link to="/sobre" className="navbar-link">SOBRE</Link></li>
                 </ul>
 
                 <div>
-                    <img className="navbar-logo"src={img_logo} alt="logo techsigns"/>
+                    <figure>
+                        <Link to="/sobre">
+                        <img className="navbar-logo"src={img_logo} alt="logo techsigns"/>
+                        </Link>
+                    </figure>
                 </div>
             </nav>
         </header>
