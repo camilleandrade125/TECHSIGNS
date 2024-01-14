@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import "./style.css"
-import img_logo_text from '../../../public/TECHSIGNS!-ESCRITO.png'
+import img_logo_text from '../../../public/logo-tech-text.png'
 import img_logo from '../../../public/logo-tech.png'
 
 function Header(){
