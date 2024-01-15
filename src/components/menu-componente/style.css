@@ -1,30 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Epilogue:wght@300;400;700&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Epilogue:wght@300;400;500;700&family=Share+Tech+Mono&display=swap');
 main{
     display: flex;
     flex-direction: column;
 }
 
 .sessao-info{
-    width: 1120px;
+    width: 990px;
     margin: auto;
     height: 395px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
+   
 }
 
 .div-info{
-    width: 395px;
-    height: 395px;
-    border: 1px solid chartreuse;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid red;
 }
 
+.sessao-info-titulo{
+    width: 500px;
+    font-size: 40px;
+    overflow: hidden;
+    animation: digitando 3s steps(25), blink .4s infinite alternate;
+    color: white;
+}
 
 .image-tela-inicial{
     width: 395px;
-    height: 395px;
-    border: 1px solid chartreuse;
+    height: 395px
 }
 
 .section-button{
@@ -92,20 +103,38 @@ button{
     width: 150px;
     height: 40px;
     border-radius: 10px;
-    border: none;
-    margin-bottom: 0px;
+    border: 1px solid black;
+    box-shadow: 0 5px 0 #58a700;
 }
 
 button:hover{
     background-color: aqua;
 }
 
+button:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
 .name-jogos{
     text-align: left;
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 700;
     color: white;
     padding-left: 19px;
     font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+}
+
+
+@keyframes digitando{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    40%{
+        border-color: rgba(255, 255, 255, 0.2);
+    }
 }

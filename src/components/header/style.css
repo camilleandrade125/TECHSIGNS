@@ -47,7 +47,8 @@ nav{
     background-color: #072354;
     padding: 10px ;
     color: white;
-    font-weight: 600;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
     cursor: pointer;
     position: relative;
     

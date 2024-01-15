@@ -8,6 +8,8 @@ function Menu(){
             <main>
                 <section className="sessao-info"> 
                     <div className="div-info">
+                        <h1 className="sessao-info-titulo">SOFTWARE EDUCATIVO ADAPTADO A LIBRAS</h1>
+                        <p className="sessao-info-texto">Conectando Mundos Silenciosos: Aprenda Informática de Forma Divertida com Nossos Jogos Inclusivos!</p>
 
                     </div>
 
