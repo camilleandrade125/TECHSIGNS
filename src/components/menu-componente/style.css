@@ -12,25 +12,33 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-between; 
-   
 }
 
 .div-info{
-    width: 600px;
+    width: 500px;
     height: 350px;
     display: flex;
     flex-direction: column;  
     justify-content: center;
     padding: 10px;
-    border: 1px solid red;
+    gap: 10px;
+}
+
+.sessao-info-subtitulo{
+    color: yellow;
 }
 
 .sessao-info-titulo{
-    width: 500px;
     font-size: 40px;
     overflow: hidden;
     animation: digitando 3s steps(25), blink .4s infinite alternate;
     color: white;
+    line-height:40px;
+}
+
+.sessao-info-texto{
+    color: white;
+    font-size: 24;
 }
 
 .image-tela-inicial{
@@ -104,11 +112,11 @@ button{
     height: 40px;
     border-radius: 10px;
     border: 1px solid black;
-    box-shadow: 0 5px 0 #58a700;
+    box-shadow: 0 5px 0 #aaaa;
 }
 
 button:hover{
-    background-color: aqua;
+    background-color: ;
 }
 
 button:active{

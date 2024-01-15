@@ -8,7 +8,9 @@ function Menu(){
             <main>
                 <section className="sessao-info"> 
                     <div className="div-info">
+                        <h4 className="sessao-info-subtitulo">SEJA BEM VINDO!</h4>
                         <h1 className="sessao-info-titulo">SOFTWARE EDUCATIVO ADAPTADO A LIBRAS</h1>
+                        <hr />
                         <p className="sessao-info-texto">Conectando Mundos Silenciosos: Aprenda Informática de Forma Divertida com Nossos Jogos Inclusivos!</p>
 
                     </div>
@@ -26,7 +28,7 @@ function Menu(){
                             <img src={img_jogo_1}/>
                             <span className="name-jogos">Jogo</span>
                             <div>
-                                <button>PLAY</button>
+                                <button>VAMOS LÁ!</button>
                             </div>
                         </div>
 
@@ -34,7 +36,7 @@ function Menu(){
                             <img src={img_jogo_1}/>
                             <span className="name-jogos">Jogo</span>
                             <div className="button-jogos">
-                                <button>PLAY</button>
+                                <button>VAMOS LÁ!</button>
                             </div>
                         </div>
 
@@ -42,7 +44,7 @@ function Menu(){
                            <img src={img_jogo_1}/>  
                             <span className="name-jogos">Jogo</span>
                             <div>
-                                <button>PLAY</button>
+                                <button>VAMOS LÁ!</button>
                             </div>
                         </div>
                     </div>
