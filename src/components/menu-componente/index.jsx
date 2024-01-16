@@ -28,15 +28,15 @@ function Menu(){
                             <img src={img_jogo_1}/>
                             <span className="name-jogos">Jogo</span>
                             <div>
-                                <button>VAMOS LÁ!</button>
+                                <button className="button-jogos">VAMOS LÁ!</button>
                             </div>
                         </div>
 
                         <div className="card">
                             <img src={img_jogo_1}/>
                             <span className="name-jogos">Jogo</span>
-                            <div className="button-jogos">
-                                <button>VAMOS LÁ!</button>
+                            <div>
+                                <button className="button-jogos">VAMOS LÁ!</button>
                             </div>
                         </div>
 
@@ -44,7 +44,7 @@ function Menu(){
                            <img src={img_jogo_1}/>  
                             <span className="name-jogos">Jogo</span>
                             <div>
-                                <button>VAMOS LÁ!</button>
+                                <button className="button-jogos">VAMOS LÁ!</button>
                             </div>
                         </div>
                     </div>
