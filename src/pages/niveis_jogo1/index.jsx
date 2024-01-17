@@ -1,19 +1,18 @@
-import "./style.css"
-
-import Menu from "../../components/menu-componente"
 import Header  from "../../components/header"
 import Footer from "../../components/footer"
+import Niveis from "../../components/niveis"
 
-function MenuPage(){
+export function NiveisPage(){
 
     return(
         <> 
             <Header/>
-            <Menu/>
+            <Niveis/>
             <Footer/>
         </>
     )
 
 }
 
-export default MenuPage
+export default NiveisPage
+

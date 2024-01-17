@@ -103,22 +103,6 @@ main{
     flex-direction: column;
     gap: 10px;
 }
-.button-jogos{
-    margin-bottom: 34px;
-
-}
-.button-jogos{
-    width: 150px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid #aaaa;
-    box-shadow: 0 5px 0 #aaaa;
-}
-
-.button-jogos:active{
-    box-shadow: none;
-    transform: translateY(5px);
-}
 
 .name-jogos{
     text-align: left;
@@ -129,3 +113,27 @@ main{
     font-family: 'Epilogue', sans-serif;
     font-weight: 500;
 }
+
+.link-niveis{
+    margin-bottom: 34px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #aaaa;
+    box-shadow: 0 5px 0 #aaaa;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+}
+
+
+.link-niveis:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+
+
