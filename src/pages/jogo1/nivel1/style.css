@@ -1,0 +1,31 @@
+.superior {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    color: white;
+  }
+  
+  .Area-video {
+    background-color: #333; 
+    height: 300px; 
+  }
+  
+  .Grade-Buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .Grade-Buttons button {
+    width: 150px;
+    height: 150px;
+    background-color: #006666; 
+    color: white;
+    border: none;
+    margin: 0 10px;
+  }

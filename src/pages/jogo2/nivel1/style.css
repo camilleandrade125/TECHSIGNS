@@ -1,0 +1,46 @@
+body {
+    background-color: #006666;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .superior {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: calc(100% - 20px);
+    color: white;
+  }
+  
+  .Buttons-superior,
+  .Buttons-inferior {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 50%; /* Centralizado em relação ao pai */
+    transform: translateX(-50%);
+  }
+  
+  .Buttons-superior {
+    top: 150px;
+  }
+  
+  .Buttons-inferior {
+    top: 400px;
+  }
+  
+  .Buttons-superior button,
+  .Buttons-inferior button {
+    width: 200px;
+    height: 200px;
+    background-color: #006666;
+    color: white;
+    border: none;
+    margin: 0 50px;
+  }
