@@ -53,36 +53,72 @@ function LoginPage(){
     return (
    
         <>
-        <HeaderLogin/>
-        <Modal visible={showModal} onClose={fecharModal}>
-        <section className="conteiner-showModal">
-        <label>
-        <p>Nome Completo</p>
-        <input type="text"></input>
-        </label>
+        <Modal visible={showModal} onClose={fecharModal} title="Dados cadastrais">
 
-        <label>
-        <p>Email</p>
-        <input type="email" ></input>
-        </label>
+            <form  className="conteiner-showModal">
 
-        <label>
-        <p>Idade</p>
-        <input type="number"></input>
-        </label>
+                <label>
 
-        <label>
-        <p>Senha</p>
-        <input type="password"></input>
-        </label>
+                    <p>Nome Completo</p>
 
-        <label>
-        <p>Confirmar senha</p>
-        <input type="password"></input>
-        </label>
+                    <input type="text"></input>
 
-        <button id="modal-bts">Cadastrar</button> 
-        </section>
+                </label>
+
+                <label>
+
+                    <p>Email</p>
+
+                    <input type="email" ></input>
+
+                </label>
+
+                <label>
+
+                    <p>Gereno</p>
+
+                    <select>
+
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outros</option>
+
+                    </select>
+                    
+                </label>
+
+                <label>
+
+                    <p>Data de nascimento</p>
+
+                    <input type="date"/>
+
+                </label>
+
+                <label>
+
+                    <p>Senha</p>
+
+                    <input type="password"></input>
+
+                </label>
+
+                <label>
+
+                    <p>Confirmar senha</p>
+                    
+                    <input type="password"></input>
+
+                </label>
+
+               <div className="buttons">
+
+                    <button id="modal-bts">Cadastrar</button> 
+
+               </div>
+
+            </form>
+
         </Modal>
 
         <div className="area-container">
@@ -92,6 +128,7 @@ function LoginPage(){
                     <form onSubmit={enviarForm} className="inputs">
 
                         <h1>{email}</h1>
+
                         <h1>{senha}</h1>
 
                         <p id="texto"><strong>Conecte-se além das palavras!</strong></p>
@@ -119,8 +156,7 @@ function LoginPage(){
                 </div>
 
         </div>
-            
-            <Footer/>
+        
         </>
 
     )

@@ -5,8 +5,8 @@ function MenuFeedback(){
     return(
         <>
         <Header/>
-        <h1>feedback</h1>
-        <Footer/>
+        <h1>feed</h1>
+     
         </>
     )
 }
