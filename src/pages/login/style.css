@@ -1,3 +1,36 @@
+.conteiner-showModal{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap:11px;
+
+}
+
+
+.conteiner-showModal input{
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding:10px;
+    font-size: 1.1em; 
+    background: transparent;
+
+}
+
+.buttons{
+    width: 100%;
+    text-align: center;
+}
+
+.conteiner-showModal input[type="date"]{
+   
+    width: 235px;
+
+}
+
+
 .area-container{
     display: flex;
     justify-content: center;
@@ -17,6 +50,7 @@
     border-radius: 100px;
     height: 600px;
     width: 80%;
+    
    
 }
 
@@ -29,7 +63,7 @@
     border-radius: 10px;
     height: 600px;
     width: 50%;
-    gap: 20px;
+    gap: 40px;
 }
 
 #texto{
@@ -133,6 +167,7 @@
         justify-content: center;
         width: 100%;
         flex-direction: column;
+        grid-auto-flow: 10px;
     }
 
     .login-background{

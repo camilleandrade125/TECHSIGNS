@@ -1,12 +1,13 @@
 import "./style.css"
 
-function Modal({ children, visible, onClose }){
+function Modal({ children, visible, onClose, title }){
 
   if( !visible ){
     return null
   }
 
   return  (
+
 
     <div className="container-modal">
 
@@ -16,7 +17,7 @@ function Modal({ children, visible, onClose }){
 
         </div>
 
-        <h1>Dados Cadastrais</h1>
+        <h1>{title}</h1>
 
         {children}
 

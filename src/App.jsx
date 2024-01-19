@@ -1,17 +1,26 @@
-import Header from './components/header'
+
 import './App.css'
 import MainRoutes from './routes';
 import Foooter from './components/footer'
-import HeaderLogin from './components/header-login'
+import Header from './components/header';
 
 
 function App() {
 
   return (
     <>
-      
-      <MainRoutes/>
 
+    <Header/>
+      
+     <div style={{
+      height:"100vh"
+     }}>
+
+        <MainRoutes/>
+
+     </div>
+
+      <Foooter/>
       
     </>
   )

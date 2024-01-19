@@ -7,7 +7,25 @@ app.use(express.json());
 app.use(todosRoutes);
 
 app.get("/health",(req,res)=>{
-  return res.json(up);
+ 
+  console.log('Recebeu a requisição')
+
+});
+
+app.post("/register",(req,res) => {
+
+  const { email, password, username } = req.body;
+
+  console.log(req.body);
+
+  if( !email  ){
+
+    return res.json({
+      error:'Envie um email'
+    }).statusCode(404)
+
+  }
+
 });
 
 app.listen(3000,()=> console.log("server up in 3000"))

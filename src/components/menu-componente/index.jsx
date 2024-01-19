@@ -23,21 +23,26 @@ function Menu(){
 
 
                 <section className="section-button">
-                    <div className="flex">
-                        <div className="card">
-                            <img src={img_jogo_1}/>
-                            <span className="name-jogos">Jogo</span>
-                            <div>
-                                <Link to="/niveis_jogo1" className="link-niveis">VAMOS LÁ!</Link>
+
+                        <div className="flex">
+
+                            <div className="card">
+                                <img src={img_jogo_1}/>
+                                <span className="name-jogos">Jogo</span>
+                                <div>
+                                    <Link to="/niveis_jogo1" className="link-niveis">VAMOS LÁ!</Link>
                             </div>
+
                         </div>
 
                         <div className="card">
+
                             <img src={img_jogo_1}/>
                             <span className="name-jogos">Jogo</span>
                             <div>
                             <Link to="/niveis_jogo2" className="link-niveis">VAMOS LÁ!</Link>
                             </div>
+                            
                         </div>
 
                         <div className="card">
@@ -48,7 +53,9 @@ function Menu(){
                             </div>
                         </div>
                     </div>
+
                 </section>
+
             </main>
     )
 }

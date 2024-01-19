@@ -135,5 +135,15 @@ main{
     transform: translateY(5px);
 }
 
+@media(max-width:780px){
+
+    .section-button{
+        
+        flex-direction: column;
+
+    }
+
+}
+
 
 
