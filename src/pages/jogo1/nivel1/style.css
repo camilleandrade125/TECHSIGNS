@@ -1,0 +1,51 @@
+
+
+.Pausebutton{
+width: 30px;
+height: 30px;
+background-color: blue;
+margin-top: 15px;
+margin-left: 20px;
+}
+
+.cronometro{
+  font-size: 35px;
+  text-align: right;
+  position: relative;
+  margin-left: 1130px;
+  }
+
+.telgame{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+  
+video {
+background-color: #dddbd6;
+display: flex;
+width: 250px;
+height: 400px;
+margin: auto;
+justify-content: center;
+align-items: center;
+border-radius: 25px;
+border: 3px solid rgb(73, 70, 70);
+}
+
+.Grade-Buttons {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 20px;
+}
+  
+.Grade-Buttons button {
+width: 130px;
+height: 130px;
+background-color: #006666; 
+color: white;
+border-radius: 20px;
+border: 3px solid black;
+margin: 0 10px;
+}
