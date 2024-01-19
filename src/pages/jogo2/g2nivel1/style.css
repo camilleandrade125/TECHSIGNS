@@ -17,8 +17,8 @@ body {
     color: white;
   }
   
-  .Buttons-superior,
-  .Buttons-inferior {
+  .Buttons-Libras,
+  .Buttons-TI {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,20 +27,21 @@ body {
     transform: translateX(-50%);
   }
   
-  .Buttons-superior {
+  .Buttons-Libras {
     top: 150px;
   }
   
-  .Buttons-inferior {
+  .Buttons-TI {
     top: 400px;
   }
   
-  .Buttons-superior button,
-  .Buttons-inferior button {
+  .Buttons-Libras button,
+  .Buttons-TI button {
     width: 200px;
     height: 200px;
     background-color: #006666;
     color: white;
-    border: none;
+    border-radius: 15px;
+    border: solid black;
     margin: 0 50px;
   }

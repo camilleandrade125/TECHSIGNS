@@ -1,0 +1,50 @@
+body {
+    background-color: #006666;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .Pausebutton{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    margin-top: 15px;
+    margin-left: 20px;
+    }
+    
+    .cronometro{
+      font-size: 35px;
+      text-align: right;
+      position: relative;
+      margin-left: 1130px;
+      }
+  
+  .Buttons-Libras,
+  .Buttons-TI {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 50%; /* Centralizado em relação ao pai */
+    transform: translateX(-50%);
+  }
+  
+  .Buttons-Libras {
+    top: 150px;
+  }
+  
+  .Buttons-TI {
+    top: 400px;
+  }
+  
+  .Buttons-Libras button,
+  .Buttons-TI button {
+    width: 200px;
+    height: 200px;
+    background-color: #006666;
+    color: white;
+    border-radius: 15px;
+    border: solid black;
+    margin: 0 50px;
+  }
