@@ -6,9 +6,7 @@ export function NiveisPage(){
 
     return(
         <> 
-            <Header/>
             <Niveis/>
-            <Footer/>
         </>
     )
 

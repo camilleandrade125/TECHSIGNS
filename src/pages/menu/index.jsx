@@ -5,7 +5,6 @@ function MenuPage(){
 
     return(
         <> 
-
             <Menu/>
         </>
     )

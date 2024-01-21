@@ -5,16 +5,19 @@ import img_logo from '../../../public/logo-tech.png'
 import { useLocation } from 'react-router-dom'
 import HeaderLogin from '../header-login'
 
+
+
 function Header(){
 
     const { pathname } = useLocation();
 
     const rotasComHeaderDeLogin = [
+        "/sobre",
         "/menu",
-        "/sobre"
+        '/niveis_jogo1'
     ]
 
-    if( rotasComHeaderDeLogin.includes(pathname) ){
+    if ( rotasComHeaderDeLogin.includes(pathname) ){
 
         return  (
             <header className="navbar-header">

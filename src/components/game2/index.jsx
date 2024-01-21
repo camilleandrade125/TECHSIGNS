@@ -3,6 +3,10 @@ import IArquivo from "../../assets/ImagensComponentes/Arquivos.png"
 import IBackup from "../../assets/ImagensComponentes/Backup.png"
 import IBancodedados from "../../assets/ImagensComponentes/Banco de dados.png"
 import IBinario from "../../assets/ImagensComponentes/Binario.png"
+import Larquivo from "../../assets/Datilologia/Arquivos.png"
+import LBackup from "../../assets/Datilologia/Backup.png"
+import LBancodedados from "../../assets/Datilologia/Banco de dados.png"
+import LBinario from "../../assets/Datilologia/Binario.png"
 
 function  Telajogo2() {
   return (
@@ -20,10 +24,10 @@ function  Telajogo2() {
       </div>
 
       <div className="Buttons-Libras">
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
       </div>
     </>
   )

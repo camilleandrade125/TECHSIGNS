@@ -4,13 +4,13 @@ import IArquivo from "../../assets/ImagensComponentes/Arquivos.png"
 import IBackup from "../../assets/ImagensComponentes/Backup.png"
 import IBancodedados from "../../assets/ImagensComponentes/Banco de dados.png"
 import IBinario from "../../assets/ImagensComponentes/Binario.png"
-
+import { IoPause } from "react-icons/io5";
 
 function Telajogo1(){
     return (
         <>
     
-            <button className="Pausebutton"></button>
+            <button className="Pausebutton"> <IoPause/> </button>
             <label className="cronometro">00:00:00</label>
             
             <main className="telgame">    
