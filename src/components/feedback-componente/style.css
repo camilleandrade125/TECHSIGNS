@@ -7,60 +7,103 @@
     flex-direction: row;
     justify-content: center;
     background-color: #aaaa;
-    border-radius: 20px;
     box-shadow:4px 4px 12px black;  
-}
+  }
 
 .area-info{
-    width: 450px;
+    width: 500px;
     height: 620px;
-    background-color: #0B1E3F;
-    border-radius: 20px 0px 0px 20px;
+    background: #c9c9c9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.div-mensage{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
+.mensage{
+    padding: 0px 0px 0px 30px;
+    color: #1D57BB;
+}
+
+.linha{
+    align-items: center;
+    width: 440px;
+    margin-left: 30px;
+}
 .slogam-feedback{
-    font-size: 20px;
+
+    font-size: 22px;
     text-align: justify;
-    padding: 30px;
-    color: white;
+    padding: 0px 30px 30px 30px;
+    color: #0B1E3F;
 }
 
 .area-feedback{
-    width: 450px;
+    width: 400px;
     height: 580px;
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    align-items: center;
+    margin: 0px 20px 20px 20px;
+    justify-content: center;
 }
 .area-form{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+}
+
+.img-robo{
+  height: 250px;
+  width: 250px;
 }
 
 .titulo-feedback{
  text-align: center;
+ padding: 0;
  font-size: 30px;
+ color: #0B1E3F;
 }
 
-.aa{
+.avaliacao-feedback{
     width: 450px;
-    height: 220px;
-    border: 1px solid black;
+    height: 100px;
 }
 
 .form textarea{
-    border-radius: 20px;
-    width: 450px;
+    width: 350px;
+    height: 200px;
     padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    display: block;
+    border: 1px solid #0B1E3F;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;;
 }
 
-
+.form textarea:focus{
+    background: #e0e0f8;
+}
 
 .button-feedback{
-    width: 200px;
+    width: 350px;
     height: 40px;
-    border-radius: 20px;
-    border: none;
+    font-size: 1.2em;
+    padding: 0.2em 0.6em;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
+
+.button-feedback:hover{
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+

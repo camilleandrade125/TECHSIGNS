@@ -114,10 +114,6 @@
 
 }
 
-
-
-
-
 .login-background{
     position: absolute;
     right: 0px;
@@ -134,7 +130,6 @@
 
 }
 
-
 .login-area input{
     border:none;
     border-bottom: 1px solid white;
@@ -147,7 +142,6 @@
 .login-area label{
     color: white;
 }
-
 
 @media(max-width:900px){
 

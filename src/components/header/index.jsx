@@ -34,7 +34,7 @@ function Header(){
                         </figure>
                     </div>
         
-                        <ul className="navbar-list">
+                        <ul id="page-select"className="navbar-list">
                             <li><Link to="/menu" className="navbar-link">MENU</Link></li>
                             <li><Link to="/conta" className="navbar-link">CONTA</Link></li>
                             <li><Link to="/feedback" className="navbar-link">FEEDBACK</Link></li>
