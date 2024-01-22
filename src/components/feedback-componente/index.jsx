@@ -34,6 +34,10 @@ function Feedbackpage(){
                         rows="10"
                         placeholder="Escreva aqui...">
                         </textarea>
+<<<<<<< HEAD
+=======
+                        <button className="button-feedback"><strong>Enviar Avaliação!</strong></button>
+>>>>>>> efb60cd478c040418f9fe5a90dcf5dd43b6dcc39
                     </form>
                     <div>
                         <button className="button-feedback">Enviar!</button>
