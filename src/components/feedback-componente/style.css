@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #aaaa;
+    background-color: #aaaaaa60;
     border-radius: 20px;
     box-shadow:4px 4px 12px black;  
 }
@@ -14,7 +14,7 @@
 .area-info{
     width: 450px;
     height: 620px;
-    background-color: #0B1E3F;
+    background-color: #0b1e3fb4;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -35,7 +35,10 @@
 }
 .area-form{
     display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 255, 0.062);
     flex-direction: column;
+    border-radius: 15px;
     gap: 20px;
 }
 
@@ -59,6 +62,7 @@
 
 
 .button-feedback{
+    font-size: 17px;
     width: 200px;
     height: 40px;
     border-radius: 20px;

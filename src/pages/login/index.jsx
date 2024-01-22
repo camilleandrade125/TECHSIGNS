@@ -1,9 +1,8 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import "./style.css"
-import Footer from '../../components/footer';
 import Modal from "../../components/modal";
-import HeaderLogin from "../../components/header-login";
+
 
 function LoginPage(){
 
@@ -55,69 +54,56 @@ function LoginPage(){
         <>
         <Modal visible={showModal} onClose={fecharModal} title="Dados cadastrais">
 
-            <form  className="conteiner-showModal">
+        <form className="conteiner-showModal">
+    <label>
+        <p>Nome Completo</p>
+        <input type="text" />
+    </label>
 
-                <label>
+    <label>
+        <p>Email</p>
+        <input type="email" />
+    </label>
 
-                    <p>Nome Completo</p>
+    <label>
+        <p>CPF</p>
+        <input
+            type="text"
+            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+            placeholder="123.456.789-01"
+            title="Enter a valid CPF (123.456.789-01)"
+        />
+    </label>
 
-                    <input type="text"></input>
+    <label>
+        <p>Genero</p>
+        <select>
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Outros</option>
+        </select>
+    </label>
 
-                </label>
+    <label>
+        <p>Data de nascimento</p>
+        <input type="date" />
+    </label>
 
-                <label>
+    <label>
+        <p>Senha</p>
+        <input type="password" />
+    </label>
 
-                    <p>Email</p>
+    <label>
+        <p>Confirmar senha</p>
+        <input type="password" />
+    </label>
 
-                    <input type="email" ></input>
+    <div className="buttons">
+        <button id="modal-bts">Cadastrar</button>
+    </div>
+</form>
 
-                </label>
-
-                <label>
-
-                    <p>Gereno</p>
-
-                    <select>
-
-                        <option>Masculino</option>
-                        <option>Feminino</option>
-                        <option>Outros</option>
-
-                    </select>
-                    
-                </label>
-
-                <label>
-
-                    <p>Data de nascimento</p>
-
-                    <input type="date"/>
-
-                </label>
-
-                <label>
-
-                    <p>Senha</p>
-
-                    <input type="password"></input>
-
-                </label>
-
-                <label>
-
-                    <p>Confirmar senha</p>
-                    
-                    <input type="password"></input>
-
-                </label>
-
-               <div className="buttons">
-
-                    <button id="modal-bts">Cadastrar</button> 
-
-               </div>
-
-            </form>
 
         </Modal>
 
@@ -144,8 +130,8 @@ function LoginPage(){
                         </label>
 
                         <div className="bts"> 
-                        <button onClick={entrar}>Entrar</button>
-                        <button onClick={cadastrarSe}>Cadastre-se</button>
+                        <button onClick={entrar}><strong>Entrar</strong></button>
+                        <button onClick={cadastrarSe}><strong>Cadastre-se</strong></button>
                         </div>
 
                 

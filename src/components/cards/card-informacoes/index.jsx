@@ -4,6 +4,9 @@ import './style.css';
 export default function CardInformacoes({ nome, cargo, fotoPerfil, numeroTelefone,email,localidade,github}){
     
     return(
+
+        
+
         <div className="card-infos-conteiner">
             <div className="foto-infos">
                 <img src={fotoPerfil}/>
@@ -14,10 +17,12 @@ export default function CardInformacoes({ nome, cargo, fotoPerfil, numeroTelefon
                 <p>{numeroTelefone}</p>
                 <p>{email}</p>
                 <p>{localidade}</p>
-                <a  target="_blank" href="https://github.com/camilleandrade125" rel="noreferrer">{github}</a>
+                <a  target="_blank" href="" rel="noreferrer">{github}</a>
+
             </div>
            
-
         </div>
+
     )
 }
+

@@ -3,7 +3,7 @@ import CardInformacoes from "../cards/card-informacoes";
 
 function Bodysobre(){
     return  (
-    <>
+    <main className="infos-card-space"> 
 
         <CardInformacoes
             fotoPerfil="https://avatars.githubusercontent.com/u/98554053?v=4"
@@ -12,15 +12,12 @@ function Bodysobre(){
             github="https://github.com/camilleandrade125" 
             localidade="Belém-PA" 
             numeroTelefone="985940434" 
-            nome="camille andrade"
-        
-
-            
+            nome="camille andrade"   
         />
         
         <CardInformacoes
             fotoPerfil="https://avatars.githubusercontent.com/u/110643065?v=4"
-            cargo="Gamer Developer" 
+            cargo="Game Developer" 
             email="pedrolimaifpa@gmail.com" 
             github="https://github.com/PedroLimaIFPA" 
             localidade="Ananindeua-PA" 
@@ -48,11 +45,9 @@ function Bodysobre(){
             nome="Eduador Victor"
         />
 
-    
+     </main>
 
-        
-       
-     </>
+    
     )
 }
 

@@ -107,9 +107,10 @@
 
     background-color: white;
     color: black;
+    font-size: 16px;
     cursor: pointer;  
     border-radius: 7px;
-    width: 100px;
+    width: 130px;
     height: 45px;
 
 }

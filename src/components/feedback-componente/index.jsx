@@ -25,7 +25,7 @@ function Feedbackpage(){
                         rows="10"
                         placeholder="Escreva aqui...">
                         </textarea>
-                        <button className="button-feedback">Enviar!</button>
+                        <button className="button-feedback"><strong>Enviar Avaliação!</strong></button>
                     </form>
                 </div>
             </section>
