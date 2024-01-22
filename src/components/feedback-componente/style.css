@@ -1,0 +1,66 @@
+.area-feedback-sections{
+    width: 940px;
+    height: 620px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #aaaa;
+    border-radius: 20px;
+    box-shadow:4px 4px 12px black;  
+}
+
+.area-info{
+    width: 450px;
+    height: 620px;
+    background-color: #0B1E3F;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.slogam-feedback{
+    font-size: 20px;
+    text-align: justify;
+    padding: 30px;
+    color: white;
+}
+
+.area-feedback{
+    width: 450px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+}
+.area-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-feedback{
+ text-align: center;
+ font-size: 30px;
+}
+
+.aa{
+    width: 450px;
+    height: 220px;
+    border: 1px solid black;
+}
+
+.form textarea{
+    border-radius: 20px;
+    width: 450px;
+    padding: 10px;
+}
+
+
+
+.button-feedback{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}

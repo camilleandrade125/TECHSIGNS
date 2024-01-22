@@ -1,11 +1,10 @@
-import Header from "../../components/header"
-import Footer from "../../components/footer"
+import Feedbackpage from "../../components/feedback-componente"
 
 function MenuFeedback(){
     return(
         <>
-        <Header/>
-        <h1>feed</h1>
+        
+        <Feedbackpage/>
      
         </>
     )

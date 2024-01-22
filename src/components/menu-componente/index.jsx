@@ -1,5 +1,6 @@
 import "./style.css"
-import img_jogo_1 from '../../../public/fundo-card.png'
+import img_jogo_1 from '../../../public/imagemjogo1-tech.png'
+import img_jogo_2 from '../../../public/imagemjogo2-tech.png'
 import img_tela_inicial from '../../../public/image-tela-inicial.png'
 import { Link } from "react-router-dom"
 
@@ -37,7 +38,7 @@ function Menu(){
 
                         <div className="card">
 
-                            <img src={img_jogo_1}/>
+                            <img src={img_jogo_2}/>
                             <span className="name-jogos">Jogo</span>
                             <div>
                             <Link to="/niveis_jogo2" className="link-niveis">VAMOS LÁ!</Link>
@@ -46,7 +47,7 @@ function Menu(){
                         </div>
 
                         <div className="card">
-                           <img src={img_jogo_1}/>  
+                           <img/>  
                             <span className="name-jogos">Jogo</span>
                             <div>
                             <Link to="/niveis_jogo3" className="link-niveis">VAMOS LÁ!</Link>

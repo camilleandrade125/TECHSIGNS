@@ -14,7 +14,11 @@ function Header(){
     const rotasComHeaderDeLogin = [
         "/sobre",
         "/menu",
-        '/niveis_jogo1'
+        "/conta",
+        "/feedback",
+        "/niveis_jogo1",
+        "/niveis_jogo2",
+        "/niveis_jogo3"
     ]
 
     if ( rotasComHeaderDeLogin.includes(pathname) ){
