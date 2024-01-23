@@ -1,23 +1,26 @@
 import "./style.css"
+import { useState } from 'react'
 import robo from '../../../public/robo.gif'
 
 function Feedbackpage(){
+
+    const [feedback, setFeedback] = useState('')
+
+    const handleSing = (e) => {
+        e.preventDefault()
+        console.log({feedback})
+    }
+
+
     return(
         <>
         <main className="area-feedback-sections">
             <section className="area-info">
-
-                
                 <div className="div-mensage">
                     <p className="mensage">aaaaaaa</p>
-                    <hr className="linha"/>
                     <h1 className="slogam-feedback">Cada palavra sua é uma oportunidade de crescimento. Como podemos ajustar nosso site para tornar o aprendizado de informática uma experiência ainda mais incrível para você?</h1>
                 </div>  
-
-               
                     <img className="img-robo" src={robo} alt="gif do robo" />
-               
-                
             </section>
 
             <section className="area-feedback">
@@ -26,22 +29,19 @@ function Feedbackpage(){
                     <div className="avaliacao-feedback">
 
                     </div>
-                    <form className="form">
+                    <form className="form" onSubmit={handleSing}>
                         <textarea 
                         name="" 
                         id="" 
                         cols="20" 
                         rows="10"
-                        placeholder="Escreva aqui...">
+                        placeholder="Escreva aqui..." 
+                        value={feedback}
+                        onChange={(e)=>setFeedback(e.target.value)}
+                        required>
                         </textarea>
-<<<<<<< HEAD
-=======
-                        <button className="button-feedback"><strong>Enviar Avaliação!</strong></button>
->>>>>>> efb60cd478c040418f9fe5a90dcf5dd43b6dcc39
+                        <button className="button-feedback" type="submit">Enviar!</button>
                     </form>
-                    <div>
-                        <button className="button-feedback">Enviar!</button>
-                    </div>
                 </div>
             </section>
         </main>
