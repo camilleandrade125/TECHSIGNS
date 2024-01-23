@@ -3,9 +3,49 @@ body{
 }
 
 .infos-card-space{
+    width: 50%;
+   
+}
+
+.space-sobre{
     display: flex;
-    flex-direction: end;
+    justify-content:center;
+    border-right: 500px;
+    border-spacing: 50px;
+    background-color: rgba(0, 0, 0, 0.164);
+   
 }
 
 
+.space-sobre-menor{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+}
 
+.divt{
+    display: flex;
+    width: 1000px;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 8000px;
+    border-bottom-right-radius: 8000px;
+    background-color: #072354;
+}
+
+.div{
+    display: flex;
+    background-color: aliceblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 8000px;
+    background-color: #072354;
+}

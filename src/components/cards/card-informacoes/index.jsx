@@ -17,7 +17,7 @@ export default function CardInformacoes({ nome, cargo, fotoPerfil, numeroTelefon
                 <p>{numeroTelefone}</p>
                 <p>{email}</p>
                 <p>{localidade}</p>
-                <a  target="_blank" href="" rel="noreferrer">{github}</a>
+                <a  target="_blank" href={github} rel="noreferrer">{github}</a>
 
             </div>
            
