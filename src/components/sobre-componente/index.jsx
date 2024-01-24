@@ -50,7 +50,7 @@ function Bodysobre(){
 
                     <h2>Sobre o projeto</h2>
 
-                    <p>texto</p>
+                    <p>O TechSigns é um software contendo uma variedade de jogos educativos adptados à Libras (Língua Brasileira de Sinais), com o propósito de fomentar a eduacção inclusiva. O software busca proporcionar acessibildade e inclusão no processo de ensino-aprendizagem de estudantes surdos. Os jogos buscam oferecer uma abordagem gamifiada para compreensão de conceitos fundamentais de informática.</p>
 
                     <div className="divt"></div>
 

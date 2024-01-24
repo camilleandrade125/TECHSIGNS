@@ -6,51 +6,37 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-<<<<<<< HEAD
-    background-color: #aaaa;
-=======
-    background-color: #aaaaaa60;
-    border-radius: 20px;
->>>>>>> efb60cd478c040418f9fe5a90dcf5dd43b6dcc39
-    box-shadow:4px 4px 12px black;  
+    box-shadow:4px 4px 12px black; 
+    background: rgb(119, 119, 201); 
   }
 
 .area-info{
     width: 500px;
     height: 620px;
-<<<<<<< HEAD
     background: #c9c9c9;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
 .div-mensage{
     margin-top: 60px;
     display: flex;
     flex-direction: column;
-=======
-    background-color: #0b1e3fb4;
-    border-radius: 20px 0px 0px 20px;
->>>>>>> efb60cd478c040418f9fe5a90dcf5dd43b6dcc39
 }
 
 .mensage{
-    padding: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 20px;
     color: #1D57BB;
 }
 
-.linha{
-    align-items: center;
-    width: 440px;
-    margin-left: 30px;
-}
-.slogam-feedback{
 
+.slogam-feedback{
+    border-top: 2px solid yellow;
     font-size: 22px;
     text-align: justify;
-    padding: 0px 30px 30px 30px;
     color: #0B1E3F;
+    margin: 0px 20px 20px 20px;
 }
 
 .area-feedback{
@@ -61,6 +47,7 @@
     margin: 0px 20px 20px 20px;
     justify-content: center;
 }
+
 .area-form{
     display: flex;
     justify-content: center;
@@ -69,6 +56,7 @@
     border-radius: 15px;
     gap: 20px;
     align-items: center;
+    background: rgb(119, 119, 201);
 }
 
 .img-robo{
@@ -87,6 +75,11 @@
     width: 450px;
     height: 100px;
 }
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 .form textarea{
     width: 350px;
@@ -104,12 +97,7 @@
 }
 
 .button-feedback{
-<<<<<<< HEAD
     width: 350px;
-=======
-    font-size: 17px;
-    width: 200px;
->>>>>>> efb60cd478c040418f9fe5a90dcf5dd43b6dcc39
     height: 40px;
     font-size: 1.2em;
     padding: 0.2em 0.6em;
