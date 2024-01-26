@@ -7,7 +7,8 @@
     flex-direction: row;
     justify-content: center;
     box-shadow:4px 4px 12px black; 
-    background: rgb(119, 119, 201); 
+    background: #072354;
+    border-radius: 20px;
   }
 
 .area-info{
@@ -17,6 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .div-mensage{
@@ -26,17 +28,24 @@
 }
 
 .mensage{
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 4px 20px;
     color: #1D57BB;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 
 .slogam-feedback{
+    padding-top: 4px;
     border-top: 2px solid yellow;
     font-size: 22px;
     text-align: justify;
     color: #0B1E3F;
     margin: 0px 20px 20px 20px;
+    font-family: nunito;
+    font-weight: 800;
 }
 
 .area-feedback{
@@ -46,17 +55,22 @@
     flex-direction: column;
     margin: 0px 20px 20px 20px;
     justify-content: center;
+
 }
 
 .area-form{
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 255, 0.062);
+    background: #072354;
     flex-direction: column;
     border-radius: 15px;
     gap: 20px;
     align-items: center;
-    background: rgb(119, 119, 201);
+}
+
+.radio{
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .img-robo{
@@ -65,15 +79,41 @@
 }
 
 .titulo-feedback{
- text-align: center;
- padding: 0;
- font-size: 30px;
- color: #0B1E3F;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    font-family: roboto;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 2px white;
 }
 
 .avaliacao-feedback{
-    width: 450px;
-    height: 100px;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.avaliacao-feedback div{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.teste{
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    height: 150px;
+}
+
+.teste img{
+    width: 200px;
+    height: 150px;
 }
 .form{
     display: flex;
@@ -89,27 +129,38 @@
     display: block;
     border: 1px solid #0B1E3F;
     font-size: 15px;
-    font-family:'Poppins', sans-serif;;
+    font-weight: 600;
+    font-family: DM Sans;
 }
 
 .form textarea:focus{
-    background: #e0e0f8;
+    background: #5FB4E6;
+}
+
+.form textarea::placeholder{
+    color: black;
 }
 
 .button-feedback{
+    color: #1D57BB;
     width: 350px;
-    height: 40px;
-    font-size: 1.2em;
-    padding: 0.2em 0.6em;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-    cursor: pointer;
-}
-
-.button-feedback:hover{
-    background: #ccbbff;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
-}
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #1D57BB;
+    box-shadow: 0 5px 0 #aaaa;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1D57BB;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 22px;
+    }
+    
+    
+    .link-niveis:active{
+        box-shadow: none;
+        transform: translateY(5px);
+    }
 

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Epilogue:wght@300;400;500;700&family=Share+Tech+Mono&display=swap');
 main{
     display: flex;
     flex-direction: column;
@@ -26,19 +25,30 @@ main{
 
 .sessao-info-subtitulo{
     color: yellow;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family:  'Montserrat', sans-serif;
+    letter-spacing: 2px;
 }
 
 .sessao-info-titulo{
     font-size: 40px;
-    overflow: hidden;
-    animation: digitando 3s steps(25), blink .4s infinite alternate;
     color: white;
     line-height:40px;
+    font-weight: 500;
+    font-family: roboto;
+    letter-spacing: 2px;
 }
 
 .sessao-info-texto{
     color: white;
-    font-size: 24;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 500;
+    color: rgb(139, 166, 255);
+    font-family: nunito;
+    font-weight: 800;
+    
 }
 
 .image-tela-inicial{
@@ -115,18 +125,21 @@ main{
 }
 
 .link-niveis{
+    color: #1D57BB;
     margin-bottom: 34px;
     width: 150px;
-    height: 40px;
+    height: 50px;
     border-radius: 10px;
     background-color: white;
-    border: 1px solid #aaaa;
+    border: 2px solid #1D57BB;
     box-shadow: 0 5px 0 #aaaa;
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: #1D57BB;
+    font-weight: bold;
     justify-content: center;
+    font-size: 22px;
 }
 
 
@@ -143,6 +156,11 @@ main{
 
     }
 
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/Fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 

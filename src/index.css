@@ -14,3 +14,23 @@ a{
     text-decoration: none;
     color: white;
 }
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../src/assets/Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../src/assets/Fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../src/assets/Fonts/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: DM Sans;
+    src: url(../src/assets/Fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
