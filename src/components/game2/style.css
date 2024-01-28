@@ -26,12 +26,16 @@ body {
     flex-direction: row;
     align-items: center;
     position: absolute;
-    left: 50%; /* Centralizado em relação ao pai */
+    left: 50%; 
     transform: translateX(-50%);
   }
   
   .Buttons-Libras {
     top: 150px;
+  }
+
+  .Buttons-Libras img{
+    border-radius: 10px;
   }
   
   .Buttons-TI {
@@ -47,4 +51,7 @@ body {
     border-radius: 15px;
     border: solid black;
     margin: 0 50px;
+    cursor: pointer;
   }
+  
+ 

@@ -15,7 +15,7 @@ function Telajogo1(){
             
             <main className="telgame">    
 
-            <video src={Arquivo} controls ></video>
+            <video src={Arquivo} autoplay muted loop ></video>
 
             <div className="Grade-Buttons">
                 <button><img src={IArquivo}></img></button>
@@ -24,6 +24,9 @@ function Telajogo1(){
                 <button><img src={IBinario}></img></button>
             </div>
             </main>
+            <script>
+                
+            </script>
         </>
 
     )

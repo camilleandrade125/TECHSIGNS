@@ -24,10 +24,10 @@ function  Telajogo2() {
       </div>
 
       <div className="Buttons-Libras">
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
+      <button><img src={LBancodedados} width="190px"></img></button>
+      <button><img src={LBinario} width="190px"></img></button>
+      <button><img src={LBackup} width="190px"></img></button>
+      <button><img src={Larquivo} width="190px"></img></button>
       </div>
     </>
   )
