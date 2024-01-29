@@ -11,6 +11,7 @@ function Feedbackpage(){
         e.preventDefault()
         console.log({feedback})
         console.log({avaliacao})
+       
     }
 
 
