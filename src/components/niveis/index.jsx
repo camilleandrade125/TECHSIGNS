@@ -4,6 +4,7 @@ import img_nivel_2 from '../../../public/img-card-nivel2.png'
 import img_nivel_3 from '../../../public/img-card-nivel3.png'
 import img_nivel_4 from '../../../public/img-card-nivel4.png'
 import img_nivel_5 from '../../../public/img-card-nivel5.png'
+import img_fundo_niveis from '../../../public/techsings-fundo-niveis.jpg'
 import { Link } from "react-router-dom"
 
 
