@@ -1,6 +1,7 @@
 import "./style.css"
 import { useState } from 'react'
 import robo from '../../../public/robo!.gif'
+import maos_feed from '../../../public/feed-mãos.jpg'
 
 function Feedbackpage(){
 
@@ -23,7 +24,7 @@ function Feedbackpage(){
                     <p className="mensage">Olá!!!</p>
                     <h1 className="slogam-feedback">Cada palavra sua é uma oportunidade de crescimento. Como podemos ajustar nosso site para tornar o aprendizado de informática uma experiência ainda mais incrível para você?</h1>
                 </div>  
-                    
+                    <img  className='img-maos-feed'src={maos_feed} alt="" />
             </section>
 
             <section className="area-feedback">

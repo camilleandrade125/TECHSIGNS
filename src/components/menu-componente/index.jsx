@@ -47,11 +47,8 @@ function Menu(){
                         </div>
 
                         <div className="card">
-                           <img/>  
-                            <span className="name-jogos">Jogo</span>
-                            <div>
-                            <Link to="/niveis_jogo3" className="link-niveis">NÍVEIS!</Link>
-                            </div>
+                            
+    
                         </div>
                     </div>
 

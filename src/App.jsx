@@ -12,16 +12,8 @@ function App() {
     <>
 
     <Header/>
-      
-     <div style={{
-      height:"100vh"
-     }}>
-
-        <MainRoutes/>
-
-     </div>
-
-      <Foooter/>
+    <MainRoutes/>
+    <Foooter/>
       
     </>
   )
