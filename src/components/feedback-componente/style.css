@@ -14,7 +14,7 @@
 .area-info{
     width: 500px;
     height: 620px;
-    background: #c9c9c9;
+    background: #c9c9c9bb;
     display: flex;
     flex-direction: column;
     align-items: center;
