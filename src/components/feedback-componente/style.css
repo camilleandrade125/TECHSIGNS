@@ -14,10 +14,6 @@
 .area-info{
     width: 500px;
     height: 620px;
-<<<<<<< HEAD
-    background: #c9c9c9bb;
-=======
->>>>>>> fadbe76fec8fc4069d7a68916228e1ad9daaac21
     display: flex;
     flex-direction: column;
     align-items: center;

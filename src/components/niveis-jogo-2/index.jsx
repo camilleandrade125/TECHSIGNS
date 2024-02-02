@@ -23,35 +23,35 @@ function Niveis(){
                   <div className="card-nivel">
                       <img src={img_nivel_1}/>
                       <div>
-                          <Link className="link-jogar">JOGAR</Link>
+                          <Link to="/g2nivel1" className="link-jogar">JOGAR</Link>
                       </div>
                   </div>
 
                   <div className="card-nivel">
-                      <img src={img_nivel_2}/>
+                      <img   src={img_nivel_2}/>
                       <div>
-                        <Link className="link-jogar">JOGAR</Link>
+                        <Link to="/g2nivel2" className="link-jogar">JOGAR</Link>
                       </div>
                   </div>
 
                   <div className="card-nivel">
                       <img src={img_nivel_3}/>  
                       <div>
-                        <Link className="link-jogar">JOGAR</Link>
+                        <Link to="/g2nivel3"  className="link-jogar">JOGAR</Link>
                       </div>
                   </div>
 
                   <div className="card-nivel">
                       <img src={img_nivel_4}/>  
                       <div>
-                        <Link className="link-jogar">JOGAR</Link>
+                        <Link to="/g2nivel4" className="link-jogar">JOGAR</Link>
                       </div>
                   </div>
 
                   <div className="card-nivel">
                       <img src={img_nivel_5}/>  
                       <div>
-                        <Link className="link-jogar">JOGAR</Link>
+                        <Link to="/g2nivel5" className="link-jogar">JOGAR</Link>
                       </div>
                   </div>
                 </div>
