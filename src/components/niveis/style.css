@@ -1,17 +1,19 @@
 .infomacoes-jogo-1{
     width: 1200px;
-    height: 250px;
+    height: 230px;
     margin: auto;
     display: flex;
     flex-direction: row;
+    border: 1px solid green;
+    gap: 30px;
 }
 
 .titulo-jogo-1{
     width: 600px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 10px 10px 10px 120px;
+    gap: 40px;
+    padding: 40px 10px 10px 120px;
 }
 
 .testee{
@@ -19,6 +21,20 @@
     width: 480px;
 }
 .titulo-jogo-1 h1{
-    font-size: 80px;
+    font-size: 60px;
+    color: white;
+    line-height:40px;
+    font-weight: 500;
+    font-family: roboto, sans-serif;
+    letter-spacing: 2px; 
+}
+
+.info-jogo-1 {
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 500;
+    color: rgb(139, 166, 255);
+    font-family: nunito;
+    font-weight: 800;
 }
 
