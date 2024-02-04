@@ -1,32 +1,26 @@
 import "./style.css"
-import { Link } from "react-router-dom"
-
+import CardNiveis from "../cards/card-niveis";
 
 function Niveis(){
     return(
-     
         <>
          <main>
+          <section className="infomacoes-jogo-1">
+          <div className="titulo-jogo-1">
+            <h1>Jogo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates, maiores tenetur sit, asperiores esse obcaecati excepturi, ab animi officiis nisi impedit? At sed repellendus tempora illum velit aperiam ut!</p>
+          </div>
+
+          <div className="testee">
+
+          </div>
+          </section>
           <section className="card-flex">
-            <div className="cards">
-            <div className="niveis">
-            <h3>NÍVEL</h3>
-            <span className="nivel">1</span>
-            </div>
-            <div className="card-metade">
-              <span className="fases">Fases</span>
-                <div className="botoes-flex">
-                  <Link className="botoes-jogar-1 botoes-style"></Link>
-                  <Link className="botoes-jogar-2 botoes-style"></Link>
-                  <Link className="botoes-jogar-3 botoes-style"></Link>
-                  <Link className="botoes-jogar-4 botoes-style"></Link>
-                  <Link className="botoes-jogar-5 botoes-style"></Link>
-                </div>
-              </div>
-            </div>
-
-            
-
+          <CardNiveis nivel={1} link_1='' link_2='' link_3='' link_4='' link_5=''/>
+          <CardNiveis nivel={2} link_1='' link_2='' link_3='' link_4='' link_5=''/>
+          <CardNiveis nivel={3} link_1='' link_2='' link_3='' link_4='' link_5=''/>
+          <CardNiveis nivel={4} link_1='' link_2='' link_3='' link_4='' link_5=''/>
+          <CardNiveis nivel={5} link_1='' link_2='' link_3='' link_4='' link_5=''/>
           </section>
          </main>
         </>

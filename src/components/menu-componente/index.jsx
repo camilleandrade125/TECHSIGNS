@@ -2,7 +2,9 @@ import "./style.css"
 import img_jogo_1 from '../../../public/imagemjogo1-tech.png'
 import img_jogo_2 from '../../../public/imagemjogo2-tech.png'
 import img_tela_inicial from '../../../public/image-tela-inicial.png'
-import { Link } from "react-router-dom"
+
+import CardJogos from "../cards/card-jogos";
+
 
 function Menu(){
     return  (
@@ -20,40 +22,12 @@ function Menu(){
                         <img className="image-tela-inicial"src={img_tela_inicial} alt="" />
                     </div>
                 </section>
-    
-
 
                 <section className="section-button">
-
-                        <div className="flex">
-
-                            <div className="card">
-                                <img src={img_jogo_1}/>
-                                <span className="name-jogos">Jogo</span>
-                                <div>
-                                    <Link to="/niveis_jogo1" className="link-niveis">NÍVEIS!</Link>
-                            </div>
-
-                        </div>
-
-                        <div className="card">
-
-                            <img src={img_jogo_2}/>
-                            <span className="name-jogos">Jogo</span>
-                            <div>
-                            <Link to="/niveis_jogo2" className="link-niveis">NÍVEIS!</Link>
-                            </div>
-                            
-                        </div>
-
-                        <div className="card">
-                            
-    
-                        </div>
-                    </div>
-
-                </section>
-
+                    <CardJogos img={img_jogo_1} nome_jogos={'JOGO1'} link={'/niveis_jogo1'}/>
+                    <CardJogos img={img_jogo_2} nome_jogos={'JOGO2'} link={'/niveis_jogo2'}/>
+                    <CardJogos/>
+                </section> 
             </main>
     )
 }
