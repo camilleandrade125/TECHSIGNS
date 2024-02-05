@@ -1,8 +1,7 @@
 .card-infos-conteiner{
     display: flex;
     background-color: #072354;
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
+    border-radius: 25px;
     max-width: 700px;
     width: 100%;
     height: 270px;
@@ -13,11 +12,31 @@
     
 }
 
-.foto-infos img {
+.card-infos-conteiner:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
 
+
+}
+
+.foto-infos img {
+   
     border-radius: 100%;
     width: 180px;
     height: 180px;
 
 }
 
+.foto-infos{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos-pessoais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
