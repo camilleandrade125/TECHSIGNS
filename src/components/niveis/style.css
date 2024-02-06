@@ -1,40 +1,43 @@
 .infomacoes-jogo-1{
-    width: 1200px;
+    width: 1000px;
     height: 230px;
     margin: auto;
     display: flex;
     flex-direction: row;
-    border: 1px solid green;
     gap: 30px;
-}
-
-.titulo-jogo-1{
-    width: 600px;
-    display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 40px 10px 10px 120px;
 }
 
-.testee{
-    border: 1px solid aqua;
-    width: 480px;
-}
-.titulo-jogo-1 h1{
-    font-size: 60px;
+.titulo-nome-jogo{
+    font-size: 40px;
     color: white;
     line-height:40px;
     font-weight: 500;
-    font-family: roboto, sans-serif;
-    letter-spacing: 2px; 
+    font-family: roboto;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-.info-jogo-1 {
+.flex-nivel{
+    display: flex;
+}
+
+.info-jogo-1{
+    color: white;
     font-size: 20px;
     text-align: justify;
     font-weight: 500;
     color: rgb(139, 166, 255);
     font-family: nunito;
-    font-weight: 800;
+    font-weight: 800; 
+    width: 70%;
+    padding: 10px 20px 10px 20px;
 }
 
+.img-jogo-nivel{
+    width: 30%;
+    height: 150px;
+    border: 1px solid white;
+}

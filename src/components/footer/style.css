@@ -1,6 +1,4 @@
 .title-footer{
-
-    text-align: center;
     font-size: 8px;
     color: white;
     height: 50px;
@@ -11,4 +9,13 @@
     line-height: 35px;
     position: absolute;
     bottom: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-logo{
+    height: 40px;
+    transition: transform 0.5s;
 }

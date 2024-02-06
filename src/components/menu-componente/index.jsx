@@ -12,7 +12,7 @@ function Menu(){
                 <section className="sessao-info"> 
                     <div className="div-info">
                         <h4 className="sessao-info-subtitulo">SEJA BEM VINDO!</h4>
-                        <h1 className="sessao-info-titulo">SOFTWARE EDUCATIVO ADAPTADO A LIBRAS</h1>
+                        <h1 className="sessao-info-titulo">TECHSIGNS: SOFTWARE EDUCATIVO ADAPTADO A LIBRAS</h1>
                         <hr />
                         <p className="sessao-info-texto">Conectando Mundos Silenciosos: Aprenda Informática de Forma Divertida com Nossos Jogos Inclusivos!</p>
 

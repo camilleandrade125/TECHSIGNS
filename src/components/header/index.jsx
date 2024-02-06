@@ -1,7 +1,6 @@
 import {Link} from 'react-router-dom'
 import "./style.css"
 import img_logo_text from '../../../public/logo-tech-text.png'
-import img_logo from '../../../public/logo-tech.png'
 import { useLocation } from 'react-router-dom'
 import HeaderLogin from '../header-login'
 
@@ -40,14 +39,6 @@ function Header(){
                             <li><Link to="/feedback" className="navbar-link">FEEDBACK</Link></li>
                             <li><Link to="/sobre" className="navbar-link">SOBRE</Link></li>
                         </ul>
-        
-                        <div>
-                            <figure>
-                                <Link to="/sobre">
-                                <img className="navbar-logo"src={img_logo} alt="logo techsigns"/>
-                                </Link>
-                            </figure>
-                        </div>
                     </nav>
                 </header>
             )

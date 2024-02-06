@@ -1,7 +1,7 @@
 import './style.css';
 import {Link} from 'react-router-dom'
 
-export default function CardNiveis ({nivel, link_1, link_2, link_3, link_4, link_5}){
+function CardNiveis ({nivel, link_1, link_2, link_3, link_4, link_5}){
     return(
         <>
         <div className="cards">
@@ -23,3 +23,5 @@ export default function CardNiveis ({nivel, link_1, link_2, link_3, link_4, link
      </>
     )
 }
+
+export default CardNiveis
