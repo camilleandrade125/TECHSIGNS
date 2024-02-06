@@ -1,7 +1,9 @@
+import  Botao_Voltar  from "../../components/botao-voltar"
+
 function MenuConta(){
     return(
         <>
-            <h1>conta</h1>
+            <Botao_Voltar link_voltar='/menu'/>
         </>
     )
 }

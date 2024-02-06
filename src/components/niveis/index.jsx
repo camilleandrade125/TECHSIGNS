@@ -1,5 +1,5 @@
 import "./style.css"
-function Niveis({nome_jogo, descriscao_jogo}){
+function Niveis({nome_jogo, descriscao_jogo,imagem_descricao}){
     return(
         <>
          <main>
@@ -15,6 +15,7 @@ function Niveis({nome_jogo, descriscao_jogo}){
             </div>
 
             <div className="img-jogo-nivel">
+              <img src={imagem_descricao}/>
 
             </div>
           </div>
