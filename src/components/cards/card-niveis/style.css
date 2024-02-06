@@ -1,7 +1,7 @@
 .card-flex{
     display: flex;
     justify-content: center;
-    width: 1200px;
+    width: 1000px;
     height: 340px;
     margin: auto;
     margin-top: 40px;
@@ -44,9 +44,9 @@
     align-items: center;
     background: #0B1E3F;
     border-radius: 10px;
-    box-shadow:4px 4px 12px black; 
     transition: .35s;
     margin-left: 10px;
+    box-shadow:4px 4px 12px black; 
 }
 .card-metade{
     background-image: url(../../../public/techsings-fundo-niveis.jpg);
@@ -59,6 +59,7 @@
 }
 .cards:hover{
     transform: scale(1.1);
+    box-shadow:4px 4px 12px white; 
 }
 .fases{
     color: yellow;

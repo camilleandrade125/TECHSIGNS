@@ -1,7 +1,7 @@
 import './style.css';
 import {Link} from 'react-router-dom'
 
-export default function CardJogos ({img, nome_jogos, link}){
+function CardJogos ({img, nome_jogos, link}){
     return (
         
 
@@ -20,3 +20,5 @@ export default function CardJogos ({img, nome_jogos, link}){
         
     )
 }
+
+export default CardJogos
