@@ -1,11 +1,8 @@
 import './style.css';
 
-
-export default function CardInformacoes({ nome, cargo, fotoPerfil, numeroTelefone,email,localidade,github}){
+ function CardInformacoes({ nome, cargo, fotoPerfil, numeroTelefone,email,localidade,github}){
     
     return(
-
-        
 
         <div className="card-infos-conteiner">
             <div className="foto-infos">
@@ -22,7 +19,8 @@ export default function CardInformacoes({ nome, cargo, fotoPerfil, numeroTelefon
             </div>
            
         </div>
-
     )
 }
+
+export default CardInformacoes
 

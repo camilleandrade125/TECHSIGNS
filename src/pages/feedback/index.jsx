@@ -23,7 +23,7 @@ function Feedbackpage(){
         <main className="area-feedback-sections">
             <section className="area-info">
                 <div className="div-mensage">
-                    <p className="mensage">Olá!!!</p>
+                    <p className="mensage"></p>
                     <h1 className="slogam-feedback">Cada palavra sua é uma oportunidade de crescimento. Como podemos ajustar nosso site para tornar o aprendizado de informática uma experiência ainda mais incrível para você?</h1>
                 </div>  
                     <img  className='img-maos-feed'src={maos_feed} alt="" />

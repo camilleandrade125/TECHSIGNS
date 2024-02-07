@@ -5,29 +5,44 @@
     justify-content: center;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.164);
- 
-
-}
-
-
-.space-sobre-menor{
-    width: 100%;
-    gap:15px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size:25px;
-    border-radius: 15px; 
-
+    color:white;
 }
 
 .infos-card-space{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2, max-content);
-    grid-template-rows: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap:15px;
     border-radius: 55px;
+
+    & .about-cards {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: max-content;
+        gap: 16px;
+    }
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h4 {
+        width: 50%;
+        background-color: #072354;
+        border-radius: 12px;
+        text-align: center;
+    }
 }
+
+#sobre-projeto{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    padding: 0px 14px;
+    gap: 15px;
+}
+
+
 
 .div{
     display: flex;
