@@ -82,11 +82,11 @@
 .titulo-feedback{
     text-align: center;
     font-size: 30px;
-    color: white;
+    color: aliceblue;
     font-weight: 500;
-    font-family: roboto;
+    font-family:  'Montserrat', sans-serif;
     letter-spacing: 2px;
-    box-shadow: 2px 2px 2px white;
+    box-shadow: 2px 2px 2px aliceblue;
     margin-bottom: 20px;
     padding: 10px;
 }
@@ -97,7 +97,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: white;
+    color: aliceblue;
 }
 
 .avaliacao-feedback div{
@@ -132,11 +132,11 @@
     border: 1px solid #0B1E3F;
     font-size: 15px;
     font-weight: 600;
-    font-family: DM Sans;
+    font-family:  'Montserrat', sans-serif;
 }
 
 .form textarea:focus{
-    background: #5FB4E6;
+    background:  aliceblue;
 }
 
 .form textarea::placeholder{
@@ -148,21 +148,27 @@
     width: 350px;
     height: 50px;
     border-radius: 10px;
-    background-color: white;
+    background-color: aliceblue;
     border: 2px solid #1D57BB;
-    box-shadow: 0 5px 0 #aaaa;
+    box-shadow: 0 5px 0 #1D57BB;
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #1D57BB;
     font-weight: bold;
     justify-content: center;
     font-size: 22px;
+    cursor: pointer;
+    font-family:  'Montserrat', sans-serif;
     }
     
     
 .button-feedback:active{
     box-shadow: none;
     transform: translateY(5px);
+}
+
+.button-feedback:hover{
+    background: #0B1E3F;
+    color: aliceblue;
 }
 

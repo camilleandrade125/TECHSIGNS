@@ -10,7 +10,7 @@ export function NiveisPage(){
     return(
         <> 
         <Botao_Voltar link_voltar='/menu'/>
-        <Niveis nome_jogo={'Techsigns'} 
+        <Niveis nome_jogo={'jogo 1'} 
         descriscao_jogo={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum labore voluptate magnam est cumque rem a officia! Animi obcaecati.'}
         imagem_descricao={img_jogo_1}/>
         <section className="card-flex">

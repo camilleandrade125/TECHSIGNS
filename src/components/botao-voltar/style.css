@@ -1,7 +1,7 @@
 .botao-voltar-div{
     position: absolute;
     top: 70px;
-    left: 230px;
+    left: 180px;
 }
 
 .botao-voltar{
@@ -27,4 +27,9 @@
 .botao-voltar:active{
     box-shadow: none;
     transform: translateY(5px);
+}
+
+.botao-voltar:hover{
+    background: white;
+    color: #0B1E3F;
 }

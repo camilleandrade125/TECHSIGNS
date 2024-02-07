@@ -9,12 +9,13 @@
 }
 
 .titulo-nome-jogo{
-    font-size: 40px;
-    color: white;
-    line-height:40px;
-    font-weight: 500;
+    font-size: 30px;
+    color: yellow;
     font-family: roboto;
-    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: black 0.1em 0.1em 0.2em;
     display: flex;
     justify-content: center;
     margin-top: 15px;
@@ -25,7 +26,7 @@
 }
 
 .info-jogo-1{
-    color: white;
+    color: aliceblue;
     font-size: 20px;
     text-align: justify;
     font-weight: 500;
