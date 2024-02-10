@@ -1,5 +1,5 @@
 .title-footer{
-    font-size: 8px;
+    font-size: 7px;
     color: white;
     height: 50px;
     width: 100%;
@@ -13,6 +13,7 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    font-family:  'Montserrat', sans-serif;
 }
 
 .navbar-logo{

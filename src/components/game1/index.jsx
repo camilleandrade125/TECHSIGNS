@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import {Link} from 'react-router-dom'
 import "./style.css";
 import Arquivo from "../../assets/Videos/Arquivos.mp4";
 import Binario from "../../assets/Videos/Binario.mp4";
@@ -6,6 +7,8 @@ import IArquivo from "../../assets/ImagensComponentes/Arquivos.png";
 import IBackup from "../../assets/ImagensComponentes/Backup.png";
 import IBancodedados from "../../assets/ImagensComponentes/Banco de dados.png";
 import IBinario from "../../assets/ImagensComponentes/Binario.png";
+import { LuAlarmClock } from "react-icons/lu";
+import { TbPlayerPause } from "react-icons/tb";
 
 function Telajogo1() {
   const [timer, setTimer] = useState(60);
@@ -177,16 +180,16 @@ function Telajogo1() {
                 <button className="fim" onClick={handleReset}>
                   Reiniciar
                 </button>
-                <button className="fim">Sair</button>
+                  <Link to='/niveis_jogo1' className="fim">Sair</Link>
               </div>
             )}
             <div className="container-top">
                 
-                <button className="Pausebutton" onClick={handlePause}>||</button>
+                <button className="Pausebutton" onClick={handlePause}><TbPlayerPause fontSize={25}/></button>
                 
                 <div className="top-message">{topMessage}</div>
                 
-                <div className="Tempo">{timer}s</div>
+                <div className="Tempo"><LuAlarmClock fontSize={25}/>{timer}s</div>
                 
             </div>
 

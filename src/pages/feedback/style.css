@@ -1,6 +1,6 @@
 .area-feedback-sections{
-    width: 900px;
-    height: 580px;
+    width: 1000px;
+    height: 600px;
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -145,7 +145,7 @@
 
 .button-feedback{
     color: #1D57BB;
-    width: 350px;
+    width: 170px;
     height: 50px;
     border-radius: 10px;
     background-color: aliceblue;
@@ -153,12 +153,14 @@
     box-shadow: 0 5px 0 #1D57BB;
     display: flex;
     align-items: center;
+    gap: 20px;
     text-decoration: none;
     font-weight: bold;
     justify-content: center;
     font-size: 22px;
     cursor: pointer;
     font-family:  'Montserrat', sans-serif;
+    text-transform: uppercase;
     }
     
     

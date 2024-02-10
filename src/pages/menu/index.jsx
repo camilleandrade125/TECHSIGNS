@@ -4,7 +4,7 @@ import img_jogo_2 from "../../../public/imagemjogo2-tech.png";
 import img_tela_inicial from "../../../public/image-tela-inicial.png";
 import CardJogos from "../../components/cards/card-jogos";
 
-
+//import { CgAlarm } from "react-icons/cg";
 
 function MenuPage(){
     return  (

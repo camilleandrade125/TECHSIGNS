@@ -3,6 +3,7 @@ import { useState } from 'react'
 import robo from '../../../public/robo!.gif'
 import  Botao_Voltar  from "../../components/botao-voltar"
 import maos_feed from '../../../public/feed-mãos.jpg'
+import { PiRocketLaunchDuotone } from "react-icons/pi";
 
 function Feedbackpage(){
 
@@ -54,8 +55,9 @@ function Feedbackpage(){
                         onChange={(e)=>setFeedback(e.target.value)}
                         required>
                         </textarea>
-                        <button className="button-feedback" type="submit">Enviar!</button>
+    
                     </form>
+                    <button className="button-feedback" type="submit">Enviar<PiRocketLaunchDuotone fontSize={30}/></button>
                 </div>
             </section>
         </main>

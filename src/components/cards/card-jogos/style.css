@@ -7,20 +7,16 @@
 
 .flex{
     width: 300px;
-    height: 250px;
+    height: 255px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 70px; 
-    padding-bottom: 55px;
+    padding-bottom: 10px;
 }
 
-.flex:hover > :not(:hover){
-    opacity: .4;
-    transform: scale(0.9);
-    
-}
+
 
 .card {
     background-color: #0B1E3F;
@@ -32,6 +28,7 @@
     border: 5px solid yellow;
     display: flex; 
     flex-direction: column; 
+   
 }
 
 .card:hover{
@@ -41,7 +38,6 @@
 
 .card > div{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -58,6 +54,14 @@
     gap: 10px;
 }
 
+.name-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0 5px 0 5px;
+}
+
 .name-jogos{
     text-align: center;
     text-transform: uppercase;
@@ -65,23 +69,27 @@
     color: aliceblue;
     font-family:  'Montserrat', sans-serif;
     font-weight: 500;
+} 
+
+
+.botao-niveis{
     display: flex;
-    border-left: 2px solid #1D57BB;
-    margin-left: 20px;
-    padding-left: 7px;
+    justify-content: center;
+
 }
 
 .link-niveis{
-    color: white;
+    color: #1D57BB;
     margin-bottom: 34px;
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    background-color: #0B1E3F;
+    background-color: white;
     border: 2px solid #1D57BB;
     box-shadow: 0 5px 0 #1D57BB;
     display: flex;
     align-items: center;
+    gap: 10px;
     text-decoration: none;
     font-weight: bold;
     justify-content: center;
@@ -96,19 +104,11 @@
 }
 
 .link-niveis:hover{
-    background: white;
-    color: #0B1E3F;
+    background: #0B1E3F;
+    color: white;
 }
 
-@media(max-width:780px){
 
-    .section-button{
-        
-        flex-direction: column;
-
-    }
-
-}
 
 @font-face {
     font-family: Montserrat;

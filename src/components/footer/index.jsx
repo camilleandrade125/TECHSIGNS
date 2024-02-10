@@ -1,5 +1,5 @@
 import "./style.css"
-import img_logo from '../../../public/logo-tech.png'
+
 
 function Footer(){
     return  (

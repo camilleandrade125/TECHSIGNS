@@ -68,11 +68,14 @@
     font-weight: 600;
     margin: 7px 5px 2px 7px;
     padding: 5px;
-    width: 70px;
+    width: 80px;
     border:1px solid white;
     background: #0B1E3F;
     text-align: center;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .botoes-flex{
