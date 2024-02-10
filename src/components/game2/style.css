@@ -5,21 +5,37 @@ body {
     font-family: Arial, sans-serif;
   }
   
-  .Pausebutton{
-    width: 30px;
-    height: 30px;
-    background-color: blue;
-    margin-top: 15px;
-    margin-left: 20px;
-    }
-    
-    .cronometro{
-      font-size: 35px;
-      text-align: right;
-      position: relative;
-      margin-left: 1130px;
-      }
+  .container-top{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
   
+  .Pausebutton{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  
+  .top-message{
+    background-color: antiquewhite;
+    width: 95px;
+    height: 25px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 12px;
+    margin-left: 560px;
+  }
+  
+  .Cronometro{
+    font-size: 30px;
+    color: #dddbd6;
+    border-radius: 30px;
+    margin-top: 0px;
+    justify-content: center;
+    margin-top: 12px;
+    margin-left: 525px;
+  }
   .Buttons-Libras,
   .Buttons-TI {
     display: flex;
