@@ -78,7 +78,6 @@ function LoginPage() {
         }
       })
       .catch((error) => {
-        console.error("Erro ao fazer login:", error);
         setMessage("Erro ao tentar fazer login");
       });
   }

@@ -24,8 +24,8 @@ function MenuPage(){
                 </section>
 
                 <section className="section-button">
-                    <CardJogos img={img_jogo_1} nome_jogos={'JOGO1'} link={'/niveis_jogo1'}/>
-                    <CardJogos img={img_jogo_2} nome_jogos={'JOGO2'} link={'/niveis_jogo2'}/>
+                    <CardJogos img={img_jogo_1} nome_jogos={'SinMatch'} link={'/niveis_jogo1'}/>
+                    <CardJogos img={img_jogo_2} nome_jogos={'SinaTech'} link={'/niveis_jogo2'}/>
                 </section> 
             </main>
     )
