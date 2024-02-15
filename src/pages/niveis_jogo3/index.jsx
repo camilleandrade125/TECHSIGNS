@@ -10,8 +10,8 @@ export function NiveisPage3(){
     return(
         <>  
         <Botao_Voltar link_voltar='/menu'/>
-        <Niveis nome_jogo={'Jogo3'} 
-        descriscao_jogo={'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'}
+        <Niveis nome_jogo={'WordWay'} 
+        descriscao_jogo={'No jogo "Wordway", os jogadores enfrentam o desafio de colidir com os sinais corretos para formar palavras. Cada nível apresenta uma palavra a ser construída, exigindo destreza e raciocínio. Com gráficos envolventes.'}
         imagem_descricao={img_jogo_3}/>
         <section className="card-flex">
           <CardNiveis nivel={1} link_1='' link_2='' link_3='' link_4='' link_5=''/>
