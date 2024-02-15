@@ -95,24 +95,23 @@ function Telajogo1() {
   };
 
   const handleButtonClick = (clickedButtonId) => {
-    // Se o jogo estiver pausado, não processar o clique do botão
     if (isPaused) {
       return;
     }
 
-    // Restante do código permanece o mesmo...
-    // Verifica se o botão clicado é o correto para a rodada atual
     const isCorrectButton =
       (currentRound === 1 && clickedButtonId === 1) ||
       (currentRound === 2 && clickedButtonId === 4);
 
-    // Atualiza a pontuação com base na corretude do botão
+ 
     if (isCorrectButton) {
       setScores((prevScores) => prevScores + 10);
+      alert("Legal, você acertou!");
     } else {
       // Se o botão clicado for errado, subtrai 5 pontos e incrementa o contador de erros
       setScores((prevScores) => Math.max(0, prevScores - 5)); // Não permite pontuação negativa
       setErrorCount((prevErrorCount) => prevErrorCount + 1);
+      alert('Tente novamente!');
     }
 
     setShowRoundMessage(true);
