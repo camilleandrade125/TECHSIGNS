@@ -14,8 +14,7 @@ function MenuPage(){
                         <h4 className="sessao-info-subtitulo">SEJA BEM VINDO!</h4>
                         <h1 className="sessao-info-titulo">TECHSIGNS: SOFTWARE EDUCATIVO ADAPTADO A LIBRAS</h1>
                         <hr />
-                        <p className="sessao-info-texto">Conectando Mundos Silenciosos: Aprenda Informática de Forma Divertida com Nossos Jogos Inclusivos!</p>
-
+                        <p className="sessao-info-texto">Conectando mundos ilenciosos: Aprenda <span className="palavras-importantes">&lt;Informática&gt;</span> de forma divertida com nossos <span className="palavras-importantes">&lt;Jogos Inclusivos!&gt;</span></p>       
                     </div>
 
                     <div>
@@ -26,6 +25,7 @@ function MenuPage(){
                 <section className="section-button">
                     <CardJogos img={img_jogo_1} nome_jogos={'SinMatch'} link={'/niveis_jogo1'}/>
                     <CardJogos img={img_jogo_2} nome_jogos={'SinaTech'} link={'/niveis_jogo2'}/>
+                    <CardJogos img={''} nome_jogos={''} link={'/niveis_jogo3'}/>
                 </section> 
             </main>
     )
