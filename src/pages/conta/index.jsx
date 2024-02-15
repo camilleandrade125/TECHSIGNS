@@ -11,7 +11,7 @@ function Feedbackpage(){
         <Botao_Voltar link_voltar='/menu'/>
         <main className="perfil">
             <section className="area-info">
-  
+                   <h1 className="dese">EM DESENVOLVIMENTO!</h1>
             </section>
         </main>
         </>

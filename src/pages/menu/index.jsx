@@ -1,6 +1,7 @@
 import "./style.css"
-import img_jogo_1 from "../../../public/imagemjogo1-tech.png";
-import img_jogo_2 from "../../../public/imagemjogo2-tech.png";
+import img_jogo_1 from "../../../public/imagemjogo1-techsigns.png";
+import img_jogo_2 from "../../../public/imagemjogo2-techsigns.png";
+import img_jogo_3 from "../../../public/imagemjogo3-techsigns.png";
 import img_tela_inicial from "../../../public/image-tela-inicial.png";
 import CardJogos from "../../components/cards/card-jogos";
 
@@ -25,7 +26,7 @@ function MenuPage(){
                 <section className="section-button">
                     <CardJogos img={img_jogo_1} nome_jogos={'SinMatch'} link={'/niveis_jogo1'}/>
                     <CardJogos img={img_jogo_2} nome_jogos={'SinaTech'} link={'/niveis_jogo2'}/>
-                    <CardJogos img={''} nome_jogos={''} link={'/niveis_jogo3'}/>
+                    <CardJogos img={img_jogo_3} nome_jogos={'Jogo 3'} link={'/niveis_jogo3'}/>
                 </section> 
             </main>
     )
