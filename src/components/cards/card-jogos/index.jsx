@@ -1,6 +1,6 @@
 import './style.css';
 import {Link} from 'react-router-dom'
-import { CgArrowRightR } from "react-icons/cg";
+import { FaHandPointRight } from "react-icons/fa6";
 import { LuGamepad2 } from "react-icons/lu";
 
 
@@ -17,7 +17,7 @@ function CardJogos ({img, nome_jogos, link}){
                 <span className="name-jogos">{nome_jogos}</span>
                 </div>
                 <div className='botao-niveis'>
-                    <Link to={link} className="link-niveis"><span>NÍVEIS</span> <CgArrowRightR/></Link>
+                    <Link to={link} className="link-niveis"><span>NÍVEIS</span> <FaHandPointRight /></Link>
                 </div>
             </div>
 

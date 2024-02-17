@@ -1,12 +1,13 @@
-main{
+.main-menu{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .sessao-info{
-    width: 1000px;
-    margin: auto;
-    height: 355px;
+    width: 1250px;
+    height: 335px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,7 +15,7 @@ main{
 }      
 
 .div-info{
-    width: 500px;
+    width: 700px;
     height: 350px;
     display: flex;
     flex-direction: column;  
@@ -32,7 +33,7 @@ main{
 }
 
 .sessao-info-titulo{
-    font-size: 40px;
+    font-size:45px;
     color: aliceblue;
     line-height:40px;
     font-weight: 500;
@@ -45,17 +46,46 @@ main{
     font-size: 20px;
     text-align: justify;
     font-weight: 500;
-    color: rgb(139, 166, 255);
+    color: #BcE5ff;
     font-family: nunito;
     font-weight: 800;  
 }
 
 .image-tela-inicial{
-    width: 350px;
-    height: 350px;
+    margin-top: 40px;
+    width: 450px;
+    height: 450px;
 }
 
 .palavras-importantes{
     font-weight: 900;
-    color: yellow;
+    color: rgb(238, 238, 161);
+}
+
+.section-button-menu{
+    width: 1250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+  
+}
+
+.cards-button-menu{
+    display: flex;
+    width: 750px;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.alfabeto-libras{
+    width: 400px;
+    border: 1px solid blue;
+    height: 270px;
+ 
 }

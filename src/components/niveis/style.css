@@ -1,11 +1,12 @@
 .infomacoes-jogo-1{
-    width: 1000px;
+    width: 1200px;
     height: 230px;
     margin: auto;
     display: flex;
     flex-direction: row;
     gap: 30px;
     flex-direction: column;
+    padding: 20px;
 }
 
 .titulo-nome-jogo{
@@ -18,11 +19,11 @@
     text-shadow: black 0.1em 0.1em 0.2em;
     display: flex;
     justify-content: center;
-    margin-top: 15px;
 }
 
 .flex-nivel{
     display: flex;
+    gap:70px;
 }
 
 .info-jogo-1{
@@ -33,7 +34,7 @@
     color: rgb(139, 166, 255);
     font-family: nunito;
     font-weight: 800; 
-    width: 700px;
+    width: 800px;
     padding: 10px 20px 10px 20px;
 }
 

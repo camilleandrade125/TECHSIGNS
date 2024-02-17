@@ -1,19 +1,19 @@
 .area-feedback-sections{
-    width: 1000px;
+    width: 1250px;
     height: 600px;
     margin: auto;
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     box-shadow:4px 4px 12px black; 
     background: #072354;
     border-radius: 20px;
+    align-items: center;
+    justify-content: center;
   }
 
 .area-info{
-    width: 500px;
-    height: 620px;
+    width: 600px;
+    height: 580px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,12 +50,16 @@
     width: 300px;
 }
 .area-feedback{
-    width: 400px;
+    width: 600px;
     height: 580px;
     display: flex;
     flex-direction: column;
-    margin: 0px 20px 0px 20px;
     justify-content: center;
+}
+
+.divisao{
+    border: 2px solid #1D57BB;
+    padding: 30px;
 }
 
 .area-form{
@@ -65,7 +69,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    border-left: 1px solid yellow;
+    
 
 }
 
@@ -85,9 +89,7 @@
     color: aliceblue;
     font-weight: 500;
     font-family:  'Montserrat', sans-serif;
-    letter-spacing: 2px;
-    box-shadow: 2px 2px 2px aliceblue;
-    margin-bottom: 20px;
+    letter-spacing: 2px;;
     padding: 10px;
 }
 
@@ -98,6 +100,7 @@
     flex-direction: column;
     gap: 10px;
     color: aliceblue;
+    accent-color: yellow;
 }
 
 .avaliacao-feedback div{
@@ -109,7 +112,7 @@
 .teste{
     display: flex;
     flex-direction: row;
-    width: 350px;
+    width: 400px;
     height: 150px;
 }
 
@@ -120,11 +123,13 @@
 .form{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 15px;
 }
 
 .form textarea{
-    width: 350px;
+    width: 400px;
     height: 200px;
     padding: 10px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
@@ -174,3 +179,7 @@
     color: aliceblue;
 }
 
+
+.icon-amarelo{
+    color: yellow;
+}

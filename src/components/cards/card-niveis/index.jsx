@@ -1,6 +1,6 @@
 import './style.css';
 import {Link} from 'react-router-dom'
-import { HiOutlineArrowSmDown } from "react-icons/hi";
+import { FaHandPointDown } from "react-icons/fa6";
 function CardNiveis ({nivel, link_1, link_2, link_3, link_4, link_5}){
     return(
         <>
@@ -10,7 +10,7 @@ function CardNiveis ({nivel, link_1, link_2, link_3, link_4, link_5}){
           <span className="nivel">{nivel}</span>
         </div>
         <div className="card-metade">
-          <div className="fases"><span>Fases</span><HiOutlineArrowSmDown/></div>
+          <div className="fases"><span>Fases</span><FaHandPointDown /></div>
             <div className="botoes-flex">
               <Link to={link_1} className="botoes-jogar-1 botoes-style">.</Link>
               <Link to={link_2} className="botoes-jogar-2 botoes-style">.</Link>

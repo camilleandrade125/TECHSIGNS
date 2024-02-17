@@ -8,17 +8,15 @@
     position: relative;
     background-color: #072354;
 }
-
 nav{
-    width: 100%;
     margin: auto;
-    height: 40;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    padding: 3px;
+    
 }
 
 
@@ -81,4 +79,11 @@ nav{
     transform: translateY(4px);
 }
 
+.hands{
+    font-size: 40px;
+    color: #1D57BB;
+}
 
+.hands:hover{
+    color: whitesmoke;
+}

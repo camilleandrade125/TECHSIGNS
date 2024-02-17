@@ -3,6 +3,7 @@ import "./style.css"
 import img_logo_text from '../../../public/logo-tech-text.png'
 import { useLocation } from 'react-router-dom'
 import HeaderLogin from '../header-login'
+import { FaHands } from "react-icons/fa6";
 
 
 
@@ -24,6 +25,7 @@ function Header(){
 
         return  (
             <header className="navbar-header">
+                <div className='testt'>
                 <nav>
                     <div className="navbar-style">
                         <figure>
@@ -39,7 +41,10 @@ function Header(){
                             <li><Link to="/feedback" className="navbar-link">FEEDBACK</Link></li>
                             <li><Link to="/sobre" className="navbar-link">SOBRE</Link></li>
                         </ul>
+
+                        <FaHands className="hands"/>
                     </nav>
+                    </div>
                 </header>
             )
 

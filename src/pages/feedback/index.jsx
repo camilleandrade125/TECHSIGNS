@@ -4,6 +4,8 @@ import robo from '../../../public/robo!.gif'
 import  Botao_Voltar  from "../../components/botao-voltar"
 import maos_feed from '../../../public/feed-mãos.jpg'
 import { PiRocketLaunchDuotone } from "react-icons/pi";
+import { LiaStarSolid } from "react-icons/lia";
+
 
 function Feedbackpage(){
 
@@ -14,7 +16,6 @@ function Feedbackpage(){
         e.preventDefault()
         console.log({feedback})
         console.log({avaliacao})
-       
     }
 
 
@@ -33,13 +34,14 @@ function Feedbackpage(){
             <section className="area-feedback">
                 <div className="area-form">
                     <h1 className="titulo-feedback">FEEDBACK</h1>
+                    <div className="divisao">
                      <div className="teste">
                         <form className="avaliacao-feedback" onSubmit={handleSing}>
-                            <div><input type="radio" name={avaliacao} value="Muito-satisfeito" onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio">Muito satisfeito</span></div>  
-                            <div><input type="radio" name={avaliacao} value="Satisfeito" onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio">Satisfeito</span></div>
-                            <div><input type="radio" name={avaliacao} value="Neutro"onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio">Neutro</span></div>
-                            <div><input type="radio" name={avaliacao} value="Insatisfeito" onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio">Insatisfeito</span></div>
-                            <div><input type="radio" name={avaliacao} value="Muito-insatisfeito" onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio">Muito insatisfeito</span></div>
+                            <div><input type="radio" name={avaliacao} value=" Muito-insatisfeito" onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio icon-amarelo"><LiaStarSolid /></span></div>  
+                            <div><input type="radio" name={avaliacao} value=" Insatisfeito" onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio icon-amarelo"><LiaStarSolid/><LiaStarSolid/></span></div>
+                            <div><input type="radio" name={avaliacao} value=" Neutro"onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio icon-amarelo"><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/></span></div>
+                            <div><input type="radio" name={avaliacao} value=" Satisfeito " onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio icon-amarelo"><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/></span></div>
+                            <div><input type="radio" name={avaliacao} value=" Muito-satisfeito " onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio icon-amarelo"><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/></span></div>
                         </form>
                         <img className="img-robo" src={robo} alt="gif do robo" />
                     
@@ -55,9 +57,10 @@ function Feedbackpage(){
                         onChange={(e)=>setFeedback(e.target.value)}
                         required>
                         </textarea>
+                        <button className="button-feedback" type="submit">Enviar<PiRocketLaunchDuotone fontSize={30}/></button>
     
                     </form>
-                    <button className="button-feedback" type="submit">Enviar<PiRocketLaunchDuotone fontSize={30}/></button>
+                    </div>
                 </div>
             </section>
         </main>
