@@ -5,49 +5,30 @@ body {
     font-family: Arial, sans-serif;
   }
   
-  .container-top{
+  .superior {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
-    flex-direction: row;
+    justify-content: space-around;
+    width: calc(100% - 20px);
+    color: white;
   }
   
-
-  
-  .top-message{
-    background-color: antiquewhite;
-    width: 95px;
-    height: 25px;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 12px;
-    margin-left: 560px;
-  }
-  
-  .Cronometro{
-    font-size: 30px;
-    color: #dddbd6;
-    border-radius: 30px;
-    margin-top: 0px;
-    justify-content: center;
-    margin-top: 12px;
-    margin-left: 525px;
-  }
   .Buttons-Libras,
   .Buttons-TI {
     display: flex;
     flex-direction: row;
     align-items: center;
     position: absolute;
-    left: 50%; 
+    left: 50%; /* Centralizado em relação ao pai */
     transform: translateX(-50%);
   }
   
   .Buttons-Libras {
     top: 150px;
-  }
-
-  .Buttons-Libras img{
-    border-radius: 10px;
   }
   
   .Buttons-TI {
@@ -63,7 +44,4 @@ body {
     border-radius: 15px;
     border: solid black;
     margin: 0 50px;
-    cursor: pointer;
   }
-  
- 

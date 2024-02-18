@@ -69,7 +69,7 @@ function Telajogo2() {
           <button className="fim">Sair</button>
         </div>
       ) : paused ? (
-        <div className="pause-state">
+        <div className="Pause-state">
           <button className="fim" onClick={handleResume}>
             Retornar
           </button>
@@ -81,7 +81,7 @@ function Telajogo2() {
       ) : (
         <>
           <div className="container-top">
-            <button className="Pausebutton" onClick={() => setPaused(!paused)}>
+            <button className="pause-button" onClick={() => setPaused(!paused)}>
               {paused ? "▶" : "||"}
             </button>
             <div className="top-message">Rodada {round}</div>

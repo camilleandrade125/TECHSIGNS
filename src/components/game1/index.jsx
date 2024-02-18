@@ -172,7 +172,7 @@ function Telajogo1() {
         <div className="Fase1">
           <main className="telgame">
             {isPaused && (
-              <div className="pause-state">
+              <div className="Pause-state">
                 <button className="fim" onClick={handleResume}>
                   Retornar
                 </button>
@@ -184,7 +184,7 @@ function Telajogo1() {
             )}
             <div className="container-top">
                 
-                <button className="Pausebutton" onClick={handlePause}><TbPlayerPause fontSize={25}/></button>
+                <button className="pause-button" onClick={handlePause}><TbPlayerPause fontSize={25}/></button>
                 
                 <div className="top-message">{topMessage}</div>
                 

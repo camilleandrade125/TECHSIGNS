@@ -10,7 +10,7 @@ import NiveisPage2 from "../pages/niveis_jogo2";
 import NiveisPage3 from "../pages/niveis_jogo3";
 import Nivel1G1 from "../pages/jogo1/g1nivel1";
 import Nivel1G2 from "../pages/jogo2/g2nivel1";
-import Nivel1G3 from "../pages/jogo1/g1nivel3";
+import Nivel1G3 from "../pages/jogo3/g3nivel1";
 
 
 
@@ -29,7 +29,7 @@ function MainRoutes(){
             <Route path="/*" element={<ErroPage/>}/> 
             <Route path="/g1nivel1" element={<Nivel1G1/>}/>
             <Route path="/g2nivel1" element={<Nivel1G2/>}/>
-            <Route path="/g1nivel3" element={<Nivel1G3/>}/>
+            <Route path="/g3nivel1" element={<Nivel1G3/>}/>
             
         </Routes>
     )
