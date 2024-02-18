@@ -6,14 +6,15 @@
 
 .navbar-header{
     position: relative;
-    background-color: #072354;
 }
+
 nav{
+    width: 1200px;
     margin: auto;
     height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     
@@ -40,7 +41,6 @@ nav{
 .navbar-link{
     text-decoration: none;
     border-radius: 5px;
-    background-color: #072354;
     padding: 15px ;
     color: aliceblue;
     font-family:  Montserrat;
@@ -81,7 +81,7 @@ nav{
 
 .hands{
     font-size: 40px;
-    color: #1D57BB;
+    color: yellow;
 }
 
 .hands:hover{

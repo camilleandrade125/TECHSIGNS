@@ -1,11 +1,18 @@
 import "./style.css"
+import {Link} from 'react-router-dom'
 import img_jogo_1 from "../../../public/imagemjogo1-techsigns.png";
 import img_jogo_2 from "../../../public/imagemjogo2-techsigns.png";
 import img_jogo_3 from "../../../public/imagemjogo3-techsigns.png";
 import img_tela_inicial from "../../../public/image-tela-inicial.png";
 import CardJogos from "../../components/cards/card-jogos";
+import { LuHeartHandshake } from "react-icons/lu";
+import { TbPointFilled } from "react-icons/tb";
 import { FaHands } from "react-icons/fa6";
 //import { CgAlarm } from "react-icons/cg";
+import A from "../../assets/Alfabetoemlibras/A.png";
+import B from "../../assets/Alfabetoemlibras/B.png";
+import C from "../../assets/Alfabetoemlibras/C.png";
+import D from "../../assets/Alfabetoemlibras/D.png";
 
 function MenuPage(){
     return  (
@@ -30,6 +37,17 @@ function MenuPage(){
                     <CardJogos img={img_jogo_3} nome_jogos={'SinaWay'} link={'/niveis_jogo3'}/>
                     </div>
                     <div className="alfabeto-libras">
+                        <div className="pontos"><TbPointFilled/><TbPointFilled/><TbPointFilled/></div>
+                        <div className="div-alfabeto"> 
+                           <div className="alfabeto-menu"> <img src={A} alt=""/></div>
+                           <div className="alfabeto-menu"> <img src={B} alt=""/></div>
+                           <div className="alfabeto-menu"> <img src={C} alt=""/></div>
+                           <div className="alfabeto-menu"> <img src={D} alt=""/></div>
+                          
+
+
+                        </div>
+                        <Link className="alfabeto-botao">ALFABETO EM LIBRAS <LuHeartHandshake fontSize={15}/></Link>
                     </div>
                 </section> 
             </main>

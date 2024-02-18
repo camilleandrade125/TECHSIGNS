@@ -6,7 +6,8 @@
 }
 
 .sessao-info{
-    width: 1250px;
+    border-top: 1px solid white;
+    width: 1200px;
     height: 335px;
     display: flex;
     flex-direction: row;
@@ -34,7 +35,7 @@
 
 .sessao-info-titulo{
     font-size:45px;
-    color: aliceblue;
+    color:  #0B1E3F;
     line-height:40px;
     font-weight: 500;
     font-family: roboto;
@@ -54,7 +55,7 @@
 .image-tela-inicial{
     margin-top: 40px;
     width: 450px;
-    height: 450px;
+    height: 360px;
 }
 
 .palavras-importantes{
@@ -63,13 +64,13 @@
 }
 
 .section-button-menu{
-    width: 1250px;
+    width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 50px;
     align-items: center;
-  
+    margin-bottom: 5px;
 }
 
 .cards-button-menu{
@@ -80,12 +81,72 @@
     gap: 45px;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
+    background-color: #072354;
 }
 
 .alfabeto-libras{
-    width: 400px;
-    border: 1px solid blue;
-    height: 270px;
- 
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #BcE5ff;
+    box-shadow: 4px 4px 12px black;
+}
+
+.pontos{
+    width: 350px;
+    background: yellow;
+    border-radius: 15px 15px 0px 0px ;
+    display: flex;
+    height: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 25px;
+    color: #1D57BB;
+
+}
+.div-alfabeto{
+    display: flex;
+    flex-wrap: wrap;
+    background: #BcE5ff;
+    width: 338px;
+    border-radius: 0px 0px 15px 15px ;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.alfabeto-menu img{
+    width: 80px;
+}
+
+.alfabeto-botao{
+    font-size: 12px;
+    color: #1D57BB;
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #1D57BB;
+    box-shadow: 0 5px 0 #1D57BB;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+    font-family:  'Montserrat', sans-serif;
+}
+
+
+.alfabeto-botao:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.alfabeto-botao:hover{
+    background: #0B1E3F;
+    color: white;
 }

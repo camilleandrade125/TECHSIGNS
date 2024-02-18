@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import "./style.css"
-import img_logo_text from '../../../public/logo-tech-text.png'
+import img_logo_text from '../../../public/tech-signs-text.png'
 import { useLocation } from 'react-router-dom'
 import HeaderLogin from '../header-login'
 import { FaHands } from "react-icons/fa6";
