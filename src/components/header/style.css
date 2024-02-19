@@ -9,15 +9,15 @@
 }
 
 nav{
-    width: 1200px;
+    background: #072354;
+    width: 100%;
     margin: auto;
     height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
-    border-bottom: 1px solid white;
 }
 
 

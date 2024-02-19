@@ -33,36 +33,34 @@ function Alfabetopage(){
     return(
         <>
         <Botao_Voltar link_voltar='/menu'/>
-        <main>
-           <section>
-            <div className="alfabeto-menu"> <img src={A} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={B} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={C} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={Ccedil} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={D} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={B} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={C} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={D} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={E} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={F} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={G} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={H} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={I} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={J} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={K} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={L} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={M} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={N} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={O} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={P} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={Q} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={R} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={S} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={T} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={U} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={W} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={Y} alt=""/></div>
-            <div className="alfabeto-menu"> <img src={Z} alt=""/></div>
+        <main className="alfabeto">
+            <h1 className="titulo-alfabeto"> ALFABETO EM LIBRAS</h1>
+            <section className="section-alfabeto">
+            <div className="card-alfabeto"> <img src={A} alt=""/></div>
+            <div className="card-alfabeto"> <img src={B} alt=""/></div>
+            <div className="card-alfabeto"> <img src={C} alt=""/></div>
+            <div className="card-alfabeto"> <img src={Ccedil} alt=""/></div>
+            <div className="card-alfabeto"> <img src={D} alt=""/></div>
+            <div className="card-alfabeto"> <img src={E} alt=""/></div>
+            <div className="card-alfabeto"> <img src={F} alt=""/></div>
+            <div className="card-alfabeto"> <img src={G} alt=""/></div>
+            <div className="card-alfabeto"> <img src={H} alt=""/></div>
+            <div className="card-alfabeto"> <img src={I} alt=""/></div>
+            <div className="card-alfabeto"> <img src={J} alt=""/></div>
+            <div className="card-alfabeto"> <img src={K} alt=""/></div>
+            <div className="card-alfabeto"> <img src={L} alt=""/></div>
+            <div className="card-alfabeto"> <img src={M} alt=""/></div>
+            <div className="card-alfabeto"> <img src={N} alt=""/></div>
+            <div className="card-alfabeto"> <img src={O} alt=""/></div>
+            <div className="card-alfabeto"> <img src={P} alt=""/></div>
+            <div className="card-alfabeto"> <img src={Q} alt=""/></div>
+            <div className="card-alfabeto"> <img src={R} alt=""/></div>
+            <div className="card-alfabeto"> <img src={S} alt=""/></div>
+            <div className="card-alfabeto"> <img src={T} alt=""/></div>
+            <div className="card-alfabeto"> <img src={U} alt=""/></div>
+            <div className="card-alfabeto"> <img src={W} alt=""/></div>
+            <div className="card-alfabeto"> <img src={Y} alt=""/></div>
+            <div className="card-alfabeto"> <img src={Z} alt=""/></div>
            </section>
         </main>
         </>
