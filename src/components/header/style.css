@@ -17,7 +17,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    
+    border-bottom: 1px solid white;
 }
 
 
@@ -43,7 +43,7 @@ nav{
     border-radius: 5px;
     padding: 15px ;
     color: aliceblue;
-    font-family:  Montserrat;
+    font-family:  PaytoneOne, sans-serif;
     font-weight: 500;
     cursor: pointer;
     position: relative;

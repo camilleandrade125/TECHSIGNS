@@ -5,7 +5,7 @@ import img_jogo_2 from "../../../public/imagemjogo2-techsigns.png";
 import img_jogo_3 from "../../../public/imagemjogo3-techsigns.png";
 import img_tela_inicial from "../../../public/image-tela-inicial.png";
 import CardJogos from "../../components/cards/card-jogos";
-import { LuHeartHandshake } from "react-icons/lu";
+import { GoChevronRight } from "react-icons/go";
 import { TbPointFilled } from "react-icons/tb";
 import { FaHands } from "react-icons/fa6";
 //import { CgAlarm } from "react-icons/cg";
@@ -47,7 +47,10 @@ function MenuPage(){
 
 
                         </div>
-                        <Link className="alfabeto-botao">ALFABETO EM LIBRAS <LuHeartHandshake fontSize={15}/></Link>
+                       <div className="div-alfabeto-botao"> 
+                        <h6>ALFABETO EM LIBRAS</h6>
+                        <Link to={'/alfabeto_libras'} className="alfabeto-botao"><GoChevronRight fontSize={25}/></Link> 
+                        </div>
                     </div>
                 </section> 
             </main>

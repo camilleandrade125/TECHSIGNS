@@ -12,11 +12,12 @@
 .titulo-nome-jogo{
     font-size: 30px;
     color: yellow;
-    font-family: roboto;
+    font-family:  'PaytoneOne', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3px;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 0.1em 0.1em;
+    letter-spacing: 7px;
     display: flex;
     justify-content: center;
 }

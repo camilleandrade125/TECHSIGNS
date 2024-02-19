@@ -5,6 +5,7 @@ import ErroPage from "../pages/erro";
 import MenuConta from "../pages/conta";
 import MenuSobre from "../pages/sobre";
 import MenuFeedback from "../pages/feedback";
+import Alfabetopage from "../pages/alfabeto_libras";
 import NiveisPage from "../pages/niveis_jogo1";
 import NiveisPage2 from "../pages/niveis_jogo2";
 import NiveisPage3 from "../pages/niveis_jogo3";
@@ -23,6 +24,7 @@ function MainRoutes(){
             <Route path="/conta" element={<MenuConta/>}/>
             <Route path="/sobre" element={<MenuSobre/>}/>
             <Route path="/feedback" element={<MenuFeedback/>}/>
+            <Route path="/alfabeto_libras" element={<Alfabetopage/>}/>
             <Route path="/niveis_jogo1" element={<NiveisPage/>}/>
             <Route path="/niveis_jogo2" element={<NiveisPage2/>}/>
             <Route path="/niveis_jogo3" element={<NiveisPage3/>}/>

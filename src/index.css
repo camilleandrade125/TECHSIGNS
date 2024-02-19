@@ -35,3 +35,8 @@ a{
     font-family: DM Sans;
     src: url(../src/assets/Fonts/DMSans-VariableFont_opsz\,wght.ttf);
 }
+
+@font-face {
+    font-family: PaytoneOne;
+    src: url(../src/assets/Fonts/PaytoneOne-Regular.ttf);
+}

@@ -6,7 +6,6 @@
 }
 
 .sessao-info{
-    border-top: 1px solid white;
     width: 1200px;
     height: 335px;
     display: flex;
@@ -92,7 +91,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #BcE5ff;
+    background-color: #6da1c2;
     box-shadow: 4px 4px 12px black;
 }
 
@@ -111,7 +110,7 @@
 .div-alfabeto{
     display: flex;
     flex-wrap: wrap;
-    background: #BcE5ff;
+    background: #6da1c2;
     width: 338px;
     border-radius: 0px 0px 15px 15px ;
     height: 150px;
@@ -122,22 +121,30 @@
     width: 80px;
 }
 
+.div-alfabeto-botao{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.div-alfabeto-botao h6{
+    font-size: 20px;
+    font-family:  'PaytoneOne', sans-serif;
+    letter-spacing: 1px;
+    color: #0B1E3F;
+}
+
 .alfabeto-botao{
-    font-size: 12px;
     color: #1D57BB;
-    width: 190px;
-    height: 50px;
-    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     background-color: white;
     border: 2px solid #1D57BB;
     box-shadow: 0 5px 0 #1D57BB;
     display: flex;
     align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    font-weight: bold;
     justify-content: center;
-    font-family:  'Montserrat', sans-serif;
 }
 
 
