@@ -1,3 +1,4 @@
+
 .area-feedback-sections{
     width: 1200px;
     height: 600px;
@@ -5,8 +6,9 @@
     margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background: #072354;
+    border-radius: 40px;
   }
 
 .area-info{
@@ -15,24 +17,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    gap: 10px;
 }
 
 .slogam-feedback{
-    /*border-top: 2px solid yellow;*/
-    font-size: 22px;
+    margin-top: 10px;
     text-align: justify;
-    color: rgb(139, 166, 255);
-    font-family: nunito;
+    font-size: 25px;
+    color: #d1d6e4;
+    font-family:  'PaytoneOne', sans-serif;
     font-weight: 800;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #1d57bb46;
+}
+
+.img-feedback{
+    width: 350px;
+    height: 300px;
 }
 
 .area-feedback{
-    width: 600px;
+    width: 500px;
     height: 580px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .divisao{
@@ -65,7 +78,15 @@
     font-family:  'PaytoneOne', sans-serif;
     letter-spacing: 2px;;
     text-shadow: black 0.1em 0.1em;
+}
+.div-titulo-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
+    
 }
 
 .avaliacao-feedback{
@@ -76,6 +97,7 @@
     gap: 10px;
     color: aliceblue;
     accent-color: yellow;
+    
 }
 
 .avaliacao-feedback div{
@@ -89,6 +111,7 @@
     flex-direction: row;
     width: 400px;
     height: 150px;
+    
 }
 
 .teste img{
@@ -101,6 +124,7 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+    margin-top: 10px;
 }
 
 .form textarea{
@@ -130,7 +154,7 @@
     border-radius: 10px;
     background-color: aliceblue;
     border: 2px solid #1D57BB;
-    box-shadow: 0 5px 0 #0B1E3F;
+    box-shadow: 2px 5px 0 #aaaa;
     display: flex;
     align-items: center;
     gap: 20px;

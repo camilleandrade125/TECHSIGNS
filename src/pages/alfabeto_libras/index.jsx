@@ -7,18 +7,19 @@ function Alfabetopage(){
     return(
         <>
         <Botao_Voltar link_voltar='/menu'/>
-        <div className="totalf">
-           <section className="alf">
+        <main className="alfabeto">
+        <div className="div-titulo-alfabeto-icon"><h1 className="titulo-alfabeto"> ALFABETO EM LIBRAS</h1></div>
+           <section className="section-alfabeto">
 
            {signals.map(signal => (
-                <div className="alfabeto-menu" key={signal.id}> 
+                <div className="card-alfabeto" key={signal.id}> 
                     <img src={signal.image} alt=""/>
                 </div>
            ))}
 
            </section>
         
-        </div>
+           </main>
         </>
     )
 }

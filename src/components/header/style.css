@@ -5,14 +5,15 @@
 }
 
 .navbar-header{
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 nav{
     background: #072354;
     width: 100%;
     margin: auto;
-    height: 50px;
+    height: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

@@ -10,6 +10,7 @@ export function NiveisPage(){
     return(
         <> 
         <Botao_Voltar link_voltar='/menu'/>
+        <main>
         <Niveis nome_jogo={'SinMatch'} 
         descriscao_jogo={'No jogo "SinMatch", os jogadores exploram a relação entre palavras escritas em Libras e suas imagens correspondentes. O desafio consiste em associar corretamente os cards que exibem palavras na linguagem de sinais às representações visuais das mesmas.'}
         imagem_descricao={img_jogo_1}/>
@@ -20,6 +21,7 @@ export function NiveisPage(){
           <CardNiveis nivel={4} link_1='' link_2='' link_3='' link_4='' link_5=''/>
           <CardNiveis nivel={5} link_1='' link_2='' link_3='' link_4='' link_5=''/>
         </section>
+        </main>
         </>
     )
 

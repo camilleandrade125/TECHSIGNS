@@ -45,6 +45,7 @@ function Telajogo3(){
   const [incorrectCollisions, setIncorrectCollisions] = useState(0);
   const [correctCollisions, setCorrectCollisions] = useState(0);
   const [analiseFinal, setAnaliseFinal] = useState('');
+  const [areAllLettersGreen, setAreAllLettersGreen] = useState(false);
   const [eficiencia, setEficiencia] = useState(0);
   const validXPositions = [ 280, 350, 450, 550, 650, 750, 850, 900, ];
   const alphabetImages = [
@@ -190,6 +191,16 @@ function Telajogo3(){
     const randomIndex = Math.floor(Math.random() * alphabetImages.length);
     return alphabetImages[randomIndex];
   };
+  
+  useEffect(() => {
+    if (desiredWords[0].split('').every(letter => wordColor[letter] === 'green')) {
+      setAreAllLettersGreen(true);
+      setGameOver(true);
+      setIsGameOver(true);
+    } else {
+      setAreAllLettersGreen(false);
+    }
+  }, [wordColor]);
 
   const checkWord = () => {
     if (desiredWords.includes(currentWord)) {

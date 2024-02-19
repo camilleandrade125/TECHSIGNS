@@ -2,9 +2,10 @@ import "./style.css"
 import { useState } from 'react'
 import robo from '../../../public/robo!.gif'
 import  Botao_Voltar  from "../../components/botao-voltar"
-import fundo from '../../../public/fundo-feedbacck.png'
+import fundo from '../../../public/img-feedback.png'
 import { PiRocketLaunchDuotone } from "react-icons/pi";
 import { LiaStarSolid } from "react-icons/lia";
+import { BsChatLeftText } from "react-icons/bs";
 
 
 function Feedbackpage(){
@@ -25,14 +26,14 @@ function Feedbackpage(){
         <main className="area-feedback-sections">
             <section className="area-info">
                 <div className="div-mensage">
-                    <h1 className="slogam-feedback">Cada palavra sua é uma oportunidade de crescimento. Como podemos ajustar nosso site para tornar o aprendizado de informática uma experiência ainda mais incrível para você?</h1>
+                    <h1 className="slogam-feedback">Cada palavra sua é uma oportunidade de crescimento. Como podemos ajustar nosso site para tornar o aprendizado de informática uma experiência ainda mais incrível para você ?</h1>
                 </div>  
-                    <img  className='img-maos-feed' alt="" />
+                    <img  className='img-feedback' alt="" src={fundo}/>
             </section>
 
             <section className="area-feedback">
                 <div className="area-form">
-                    <h1 className="titulo-feedback">FEEDBACK</h1>
+                <div className="div-titulo-icon"><h1 className="titulo-feedback">FEEDBACK </h1><BsChatLeftText fontSize={30} color="white"/></div>
                     <div className="divisao">
                      <div className="teste">
                         <form className="avaliacao-feedback" onSubmit={handleSing}>

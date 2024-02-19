@@ -8,7 +8,7 @@ import CardJogos from "../../components/cards/card-jogos";
 import { GoChevronRight } from "react-icons/go";
 import { TbPointFilled } from "react-icons/tb";
 import { FaHands } from "react-icons/fa6";
-//import { CgAlarm } from "react-icons/cg";
+import { FaArrowRight } from "react-icons/fa6";
 import A from "../../assets/Alfabetoemlibras/A.png";
 import B from "../../assets/Alfabetoemlibras/B.png";
 import C from "../../assets/Alfabetoemlibras/C.png";
@@ -32,24 +32,26 @@ function MenuPage(){
 
                 <section className="section-button-menu">
                     <div className="cards-button-menu">
+            
+         
                     <CardJogos img={img_jogo_1} nome_jogos={'SinMatch'} link={'/niveis_jogo1'}/>
                     <CardJogos img={img_jogo_2} nome_jogos={'SinaTech'} link={'/niveis_jogo2'}/>
                     <CardJogos img={img_jogo_3} nome_jogos={'SinaWay'} link={'/niveis_jogo3'}/>
+               
                     </div>
+
+
                     <div className="alfabeto-libras">
-                        <div className="pontos"><TbPointFilled/><TbPointFilled/><TbPointFilled/></div>
+                        <div className="pontos"><TbPointFilled color="yellow"/><TbPointFilled color="yellow"/><TbPointFilled color="yellow"/></div>
                         <div className="div-alfabeto"> 
                            <div className="alfabeto-menu"> <img src={A} alt=""/></div>
                            <div className="alfabeto-menu"> <img src={B} alt=""/></div>
                            <div className="alfabeto-menu"> <img src={C} alt=""/></div>
-                           <div className="alfabeto-menu"> <img src={D} alt=""/></div>
-                          
-
-
                         </div>
+
                        <div className="div-alfabeto-botao"> 
                         <h6>ALFABETO EM LIBRAS</h6>
-                        <Link to={'/alfabeto_libras'} className="alfabeto-botao"><GoChevronRight fontSize={25}/></Link> 
+                        <Link to={'/alfabeto_libras'} className="alfabeto-botao"><FaArrowRight fontSize={20}/></Link> 
                         </div>
                     </div>
                 </section> 

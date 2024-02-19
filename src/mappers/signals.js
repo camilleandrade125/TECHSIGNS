@@ -26,9 +26,9 @@ import X from "../assets/Alfabetoemlibras/X.png";
 import Y from "../assets/Alfabetoemlibras/Y.png";
 import Z from "../assets/Alfabetoemlibras/Z.png";
 
-const letters = [A, B, C, Ccedil, D, E, F, G, I, H, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z]
+const letters = [A, B, C, Ccedil, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z]
 
-export const signals = Array.from({ length: 28 }, (_, index) => {
+export const signals = Array.from({ length: 27 }, (_, index) => {
    return {
      id: index,
      image: letters[index]
