@@ -24,7 +24,7 @@ app.post('/register', async (req, res) => {
   try {
     const result = await db.query(sql, values);
     console.log('Inserção realizada com sucesso:', result.rows);
-    res.status(200).send('Dados inseridos com sucesso');
+    res.status(201).send('Dados inseridos com sucesso');
   } catch (error) {
     console.error('Erro ao executar consulta:', error);
     res.status(500).send('Erro interno do servidor');
@@ -42,7 +42,7 @@ app.post('/login', async (req, res) => {
     if (result.rows.length > 0) {
       // Retorna os dados do usuário (opcional)
       const user = result.rows[0];
-      res.status(200).json({ success: true, user });
+      res.status(201).json({ success: true, user });
     } else {
       // Se não encontrar um usuário correspondente
       res.status(401).json({ success: false, message: 'Email ou senha incorretos' });
@@ -54,5 +54,5 @@ app.post('/login', async (req, res) => {
 });
 
 app.listen(3001, () => {
-  console.log("Servidor rodando na porta 3001");
+  console.log("Servidor rodando na porta 3001 🔥✅;");
 });

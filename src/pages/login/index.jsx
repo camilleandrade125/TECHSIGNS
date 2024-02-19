@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./style.css";
 import Modal from "../../components/modal";
 import Axios from "axios";
+import { toast } from 'sonner';
 
 function LoginPage() {
   const nav = useNavigate();
@@ -28,14 +29,6 @@ function LoginPage() {
     setSenha(evento.target.value);
   }
 
-  function entrar() {
-    if (email && senha) {
-      nav("/menu");
-    } else {
-      setMessage("Por favor, preencha o email e a senha.");
-    }
-  }
-
   function cadastrarSe() {
     setShowModal(true);
   }
@@ -45,6 +38,12 @@ function LoginPage() {
   }
 
   const handleClickButton = () => {
+
+    if (senha !== senhaConfirm){
+      toast.error('As senhas precisam ser idênticas!')
+      return
+    }
+
     Axios.post("http://localhost:3001/register", {
       nome_completo: nome,
       email: email,
@@ -56,29 +55,34 @@ function LoginPage() {
     })
       .then((response) => {
         console.log(response);
-        setMessage("Sua conta foi cadastrada com sucesso.");
+        toast.success('Sua conta foi cadastrada co sucesso!')
       })
       .catch((error) => {
-        console.error("Erro ao enviar solicitação:", error);
+        toast.error('Erro ao tentar enviar seus dados.');
       });
   };
 
   function entrar() {
+
+    if (!email || !senha){
+      toast.error("Preencha os campos, por favor.");
+      return
+    }
+  
     Axios.post("http://localhost:3001/login", {
       email: email,
       senha: senha,
     })
       .then((response) => {
         if (response.data.success) {
-          // Se o login for bem-sucedido, redireciona para a tela de menu
           nav("/menu");
+          toast.success('&#128515;')
         } else {
-          // Se o login falhar, exibe uma mensagem de erro
           setMessage(response.data.message);
         }
       })
       .catch((error) => {
-        alert("Erro ao tentar fazer login");
+        toast.info('Erro ao tentar fazer login...')
       });
   }
 
@@ -102,7 +106,7 @@ function LoginPage() {
               type="text"
               pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
               placeholder="123.456.789-01"
-              title="Enter a valid CPF (123.456.789-01)"
+              title="Exemplo (123.456.789-01)"
               onChange={(e) => setCpf(e.target.value)}
             />
           </label>
