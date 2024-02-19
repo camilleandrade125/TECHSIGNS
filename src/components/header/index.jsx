@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import "./style.css"
-import img_logo_text from '../../../public/tech-signs-text.png'
+import img_logo_text from '../../../public/techsigns-logo.png'
 import { useLocation } from 'react-router-dom'
 import HeaderLogin from '../header-login'
 import { FaHands } from "react-icons/fa6";
@@ -18,7 +18,8 @@ function Header(){
         "/feedback",
         "/niveis_jogo1",
         "/niveis_jogo2",
-        "/niveis_jogo3"
+        "/niveis_jogo3",
+        "/alfabeto_libras"
     ]
 
     if ( rotasComHeaderDeLogin.includes(pathname) ){
