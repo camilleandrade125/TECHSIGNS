@@ -1,126 +1,263 @@
-import React, { useState, useEffect } from "react";
+
+import React, { useState, useEffect, useRef } from "react";
 import "./style.css";
-import IArquivo from "../../assets/ImagensComponentes/Arquivos.png";
-import IBackup from "../../assets/ImagensComponentes/Backup.png";
-import IBancodedados from "../../assets/ImagensComponentes/Banco de dados.png";
-import IBinario from "../../assets/ImagensComponentes/Binario.png";
-import Larquivo from "../../assets/Datilologia/Arquivos.png";
-import LBackup from "../../assets/Datilologia/Backup.png";
-import LBancodedados from "../../assets/Datilologia/Banco de dados.png";
-import LBinario from "../../assets/Datilologia/Binario.png";
+import shuffle from "lodash/shuffle";
+import IArquivo from "../../Assets/ImagensComponentes/Arquivos.png";
+import IBackup from "../../Assets/ImagensComponentes/Backup.png";
+import IBancodedados from "../../Assets/ImagensComponentes/Banco de dados.png";
+import IBinario from "../../Assets/ImagensComponentes/Binario.png";
+import Larquivo from "../../Assets/Datilologia/Arquivos.png";
+import LBackup from "../../Assets/Datilologia/Backup.png";
+import LBancodedados from "../../Assets/Datilologia/Banco_de_dados.png";
+import LBinario from "../../Assets/Datilologia/Binario.png";
 
 function Telajogo2() {
-  const [selectedButtons, setSelectedButtons] = useState([]);
-  const [round, setRound] = useState(1);
-  const [timer, setTimer] = useState(60);
-  const [paused, setPaused] = useState(false);
   const [gameOver, setGameOver] = useState(false);
+  const [paused, setPaused] = useState(false);
+  const [timer, setTimer] = useState(60);
+  const [score, setScore] = useState(0);
+  const [errors, setErrors] = useState(0);
+  const [hits, setHits] = useState(0);
+  const [matchedPairs, setMatchedPairs] = useState(0);
+  const [buttonTIDisabled, setButtonTIDisabled] = useState(false);
+  const [buttonLibrasDisabled, setButtonLibrasDisabled] = useState(false);
+  const [buttonTI, setButtonTI] = useState([
+    { id: 1, image: IArquivo, selected: false, matched: false },
+    { id: 2, image: IBackup, selected: false, matched: false },
+    { id: 3, image: IBancodedados, selected: false, matched: false },
+    { id: 4, image: IBinario, selected: false, matched: false },
+  ]);
+  const [buttonLibras, setButtonLibras] = useState([
+    { id: 3, image: LBancodedados, selected: false, matched: false },
+    { id: 4, image: LBinario, selected: false, matched: false },
+    { id: 2, image: LBackup, selected: false, matched: false },
+    { id: 1, image: Larquivo, selected: false, matched: false },
+  ]);
 
-  const handleButtonClick = (button) => {
-    if (selectedButtons.length < 2) {
-      setSelectedButtons([...selectedButtons, button]);
+  const [selectedButtonTI, setSelectedButtonTI] = useState(null);
+  const [selectedButtonLibras, setSelectedButtonLibras] = useState(null);
+
+  const timerRef = useRef(null);
+
+  useEffect(() => {
+    if (!paused && !gameOver) {
+      timerRef.current = setInterval(() => {
+        setTimer((prevTimer) => (prevTimer > 0 ? prevTimer - 1 : 0));
+      }, 1000);
+    }
+
+    return () => clearInterval(timerRef.current);
+  }, [paused, gameOver]);
+
+  useEffect(() => {
+    if (timer === 0) {
+      setGameOver(true);
+    }
+  }, [timer]);
+
+  const shuffleButtons = () => {
+    setButtonTI(shuffle([...buttonTI]));
+    setButtonLibras(shuffle([...buttonLibras]));
+  };
+
+  const checkAllPairsFound = () => {
+    return matchedPairs === 3;
+  };
+
+  const handleButtonTIClick = (button) => {
+    if (!selectedButtonTI) {
+      setSelectedButtonTI(button);
+      setButtonTI((prevButtons) =>
+        prevButtons.map((btn) =>
+          btn.id === button.id ? { ...btn, selected: true } : btn
+        )
+      );
+    }
+  };
+
+  const handleButtonLibrasClick = (button) => {
+    if (!selectedButtonLibras && selectedButtonTI) {
+      setSelectedButtonLibras(button);
+      setButtonLibras((prevButtons) =>
+        prevButtons.map((btn) =>
+          btn.id === button.id ? { ...btn, selected: true } : btn
+        )
+      );
+
+      if (selectedButtonTI.id === button.id) {
+        setButtonTI((prevButtons) =>
+          prevButtons.map((btn) =>
+            btn.id === selectedButtonTI.id ? { ...btn, matched: true } : btn
+          )
+        );
+
+        setButtonLibras((prevButtons) =>
+          prevButtons.map((btn) =>
+            btn.id === button.id ? { ...btn, matched: true } : btn
+          )
+        );
+
+        setSelectedButtonTI(null);
+        setSelectedButtonLibras(null);
+
+        setScore((prevScore) => prevScore + 1);
+
+        setMatchedPairs((prevMatchedPairs) => prevMatchedPairs + 1);
+
+        if (checkAllPairsFound()) {
+          setGameOver(true);
+        }
+      } else {
+        setErrors((prevErrors) => prevErrors + 1);
+
+        setTimeout(() => {
+          setButtonTI((prevButtons) =>
+            prevButtons.map((btn) =>
+              btn.id === selectedButtonTI.id
+                ? { ...btn, selected: false }
+                : btn
+            )
+          );
+
+          setButtonLibras((prevButtons) =>
+            prevButtons.map((btn) =>
+              btn.id === button.id ? { ...btn, selected: false } : btn
+            )
+          );
+
+          setSelectedButtonTI(null);
+          setSelectedButtonLibras(null);
+        }, 1000);
+
+        if (errors === 2) {
+          setGameOver(true);
+        }
+        
+      }
     }
   };
 
   const handleRestart = () => {
     setGameOver(false);
-    setRound(1);
-    setTimer(60);
     setPaused(false);
-    setSelectedButtons([]);
+    setTimer(60);
+    setScore(0);
+    setErrors(0);
+    setHits(0);
+    setSelectedButtonTI(null);
+    setSelectedButtonLibras(null);
+    setMatchedPairs(0);
+    setButtonTIDisabled(true);
+    setButtonTI((prevButtons) =>
+      prevButtons.map((btn) => ({
+        ...btn,
+        selected: false,
+        matched: false,
+      }))
+    );
+    setButtonLibras((prevButtons) =>
+      prevButtons.map((btn) => ({
+        ...btn,
+        selected: false,
+        matched: false,
+      }))
+    );
+    shuffleButtons();
+    setTimeout(() => {
+      setButtonTIDisabled(false);
+      setButtonLibrasDisabled(false);
+    }, 1000);
+    window.location.reload();
   };
+  
 
   const handleResume = () => {
-    setPaused(false);
+  setPaused(false);
   };
-
-  const handleReset = () => {
-    setRound(1);
-    setTimer(60);
-    setSelectedButtons([]);
-    setPaused(false);
-  };
-
-  useEffect(() => {
-    if (!paused && !gameOver) {
-      const interval = setInterval(() => {
-        if (timer > 0) {
-          setTimer((prevTimer) => prevTimer - 1);
-        } else {
-          setGameOver(true);
-          clearInterval(interval);
-        }
-      }, 1000);
-      return () => clearInterval(interval);
-    }
-  }, [paused, timer, gameOver]);
 
   return (
     <>
       {gameOver ? (
         <div className="fim-game">
-          <p>Pontuação por acertos:{ }</p>
-          <p>Pontuação por Erros: { }</p>
-          <p>Tempo restante de jogo: 0s</p>
-          <p>Pontuação final: {}</p>
+          <p>Pontuação por acertos: {score}</p>
+          <p>Tempo restante de jogo: {timer}s</p>
+          <p>Jogadas erradas: {errors}</p>
+          <p>Pontuação final: {calculateFinalScore()}</p>
           <button className="fim" onClick={handleRestart}>
             Reiniciar
           </button>
           <button className="fim">Sair</button>
         </div>
       ) : paused ? (
-        <div className="Pause-state">
+        <div className="pause-state2">
           <button className="fim" onClick={handleResume}>
             Retornar
           </button>
-          <button className="fim" onClick={handleReset}>
+          <button className="fim" onClick={handleRestart}>
             Reiniciar
           </button>
           <button className="fim">Sair</button>
         </div>
       ) : (
         <>
-          <div className="container-top">
-            <button className="pause-button" onClick={() => setPaused(!paused)}>
+          <div className="container-top2">
+            <button
+              className="pause-button"
+              onClick={() => setPaused(!paused)}
+            >
               {paused ? "▶" : "||"}
             </button>
-            <div className="top-message">Rodada {round}</div>
             <div className="Tempo">{timer}s</div>
           </div>
 
-          <div className="Buttons-TI">
-        <button onClick={() => handleButtonClick("TI-Arquivo")}>
-          <img src={IArquivo} alt="Arquivo"></img>
-        </button>
-        <button onClick={() => handleButtonClick("TI-Backup")}>
-          <img src={IBackup} alt="Backup"></img>
-        </button>
-        <button onClick={() => handleButtonClick("TI-Bancodedados")}>
-          <img src={IBancodedados} alt="Banco de Dados"></img>
-        </button>
-        <button onClick={() => handleButtonClick("TI-Binario")}>
-          <img src={IBinario} alt="Binario"></img>
-        </button>
-      </div>
+          <div className="btn-TI">
+            {buttonTI.map((button) => (
+              <button
+                key={button.id}
+                onClick={() => handleButtonTIClick(button)}
+                disabled={buttonTIDisabled}
+                style={{
+                  border: button.selected ? "5px solid green" : "none",
+                  pointerEvents: button.selected ? "none" : "auto",
+                  opacity: button.matched ? 0 : 1,
+                  display: button.matched ? "none" : "block",
+                }}
+              >
+                {button.matched ? null : (
+                  <img src={button.image} width="190px" alt={`TI-${button.id}`} />
+                )}
+              </button>
+            ))}
+          </div>
 
-      <div className="Buttons-Libras">
-        <button onClick={() => handleButtonClick("Libras-Bancodedados")}>
-          <img src={LBancodedados} width="190px" alt="Banco de Dados"></img>
-        </button>
-        <button onClick={() => handleButtonClick("Libras-Binario")}>
-          <img src={LBinario} width="190px" alt="Binario"></img>
-        </button>
-        <button onClick={() => handleButtonClick("Libras-Backup")}>
-          <img src={LBackup} width="190px" alt="Backup"></img>
-        </button>
-        <button onClick={() => handleButtonClick("Libras-Arquivo")}>
-          <img src={Larquivo} width="190px" alt="Arquivo"></img>
-        </button>
-      </div>
+          <div className="btn-Libras">
+            {buttonLibras.map((button) => (
+              <button
+                key={button.id}
+                onClick={() => handleButtonLibrasClick(button)}
+                disabled={buttonLibrasDisabled}
+                style={{
+                  border: button.selected ? "2px solid green" : "none",
+                  pointerEvents: button.selected ? "none" : "auto",
+                  opacity: button.matched ? 0 : 1,
+                  display: button.matched ? "none" : "block",
+                }}
+              >
+                {button.matched ? null : (
+                  <img src={button.image} width="190px" alt={`Libras-${button.id}`} />
+                )}
+              </button>
+            ))}
+          </div>
         </>
       )}
     </>
   );
+  function calculateFinalScore() {
+    const timeRemainingBonus =
+    score > 0 ? timer * score - errors : 0;
+    return timeRemainingBonus;
+  }
 }
 
 export default Telajogo2;

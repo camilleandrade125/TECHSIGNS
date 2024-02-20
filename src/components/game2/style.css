@@ -1,39 +1,79 @@
-body {
-    background-color: #006666;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .container-top{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
-  
+.container-top2{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
 
-  
-  .top-message{
-    background-color: antiquewhite;
-    width: 95px;
-    height: 25px;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 12px;
-    margin-left: 560px;
+
+.Tempo{
+  font-size: 30px;
+  color: #dddbd6;
+  border-radius: 30px;
+  margin-top: 0px;
+  justify-content: center;
+  margin-top: 12px;
+  margin-left: 1250px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.fim{
+  background-color: rgb(62, 62, 223);
+  border: solid rgb(197, 194, 194);
+  border-radius: 8px;
+  width: 200px;
+  height: 60px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
-  
-  .Cronometro{
-    font-size: 30px;
-    color: #dddbd6;
-    border-radius: 30px;
-    margin-top: 0px;
+
+  .pause-state2{
+    top:30px;
+    background-color: #363532;
+    display: flex;
+    width: 300px;
+    height: 450px;
+    margin: auto;
     justify-content: center;
-    margin-top: 12px;
-    margin-left: 525px;
-  }
-  .Buttons-Libras,
-  .Buttons-TI {
+    align-items: center;
+    border-radius: 25px;
+    border: 3px solid rgb(73, 70, 70);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    transform: translate(490px, 0px);
+    }
+
+  .fim-game {
+    background-color: #363532;
+    display: flex;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 3px solid rgb(73, 70, 70);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    transform: translate(490px, 0px);
+    }
+    
+  .btn-Libras,
+  .btn-TI {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,28 +82,20 @@ body {
     transform: translateX(-50%);
   }
   
-  .Buttons-Libras {
-    top: 150px;
+  .btn-TI {
+    top: 120px;
+  }
+  .btn-Libras {
+    top: 370px;
   }
 
-  .Buttons-Libras img{
-    border-radius: 10px;
-  }
-  
-  .Buttons-TI {
-    top: 400px;
-  }
-  
-  .Buttons-Libras button,
-  .Buttons-TI button {
+  .btn-Libras button,
+  .btn-TI button {
     width: 200px;
     height: 200px;
-    background-color: #006666;
+    background-color: #00a2ff;
     color: white;
     border-radius: 15px;
-    border: solid black;
     margin: 0 50px;
     cursor: pointer;
   }
-  
- 
