@@ -1,22 +1,37 @@
 .perfil{
-    width: 1200px;
+    width: 600px;
     height: 600px;
     margin: auto;
     margin-top: 20px;
-
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.perfil h2{
+    font-size: 30px;
+    color: yellow;
+    font-family:  'PaytoneOne', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: black 0.1em 0.1em;
+    letter-spacing: 7px;
+    display: flex;
     justify-content: center;
 }
 
-.dese{
-    width: 1000px;
-    height: 600px;
-    color: aliceblue;
-    font-size: 50px;
+.perfil ul{
+    list-style: none;
+    font-size: 25px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: underline;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.perfil ul li{
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 0 15px;
 }
