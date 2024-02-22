@@ -12,11 +12,11 @@
 nav{
     background: #072354;
     width: 100%;
-    margin: auto;
     height: 55px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    padding: 0 100px;
+    justify-content: space-between;
 }
 
 

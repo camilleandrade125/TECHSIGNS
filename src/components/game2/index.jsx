@@ -249,7 +249,7 @@ function Telajogo2() {
                 onClick={() => handleButtonLibrasClick(button)}
                 disabled={buttonLibrasDisabled}
                 style={{
-                  border: button.selected ? "2px solid green" : "none",
+                  border: button.selected ? "5px solid black" : "none",
                   pointerEvents: button.selected ? "none" : "auto",
                   opacity: button.matched ? 0 : 1,
                   display: button.matched ? "none" : "block",

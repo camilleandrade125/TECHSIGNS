@@ -4,6 +4,7 @@ import "./style.css";
 import Modal from "../../components/modal";
 import Axios from "axios";
 import { toast } from 'sonner';
+import Footer from '../../components/footer'
 
 function LoginPage() {
   const nav = useNavigate();
@@ -162,10 +163,10 @@ function LoginPage() {
             </label>
 
             <div className="bts">
-              <button type="button" onClick={entrar}>
+              <button className="estilo-botao-global" type="button" onClick={entrar}>
                 <strong>Entrar</strong>
               </button>
-              <button onClick={cadastrarSe}>
+              <button className="estilo-botao-global" onClick={cadastrarSe}>
                 <strong>Cadastre-se</strong>
               </button>
             </div>
@@ -174,7 +175,7 @@ function LoginPage() {
           <section className="login-background"></section>
         </div>
       </div>
-    </>
+      </>
   );
 }
 

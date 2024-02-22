@@ -5,7 +5,7 @@ import  Botao_Voltar  from "../../components/botao-voltar"
 import fundo from '../../../public/img-feedback.png'
 import { PiRocketLaunchDuotone } from "react-icons/pi";
 import { LiaStarSolid } from "react-icons/lia";
-import { BsChatLeftText } from "react-icons/bs";
+import { VscFeedback } from "react-icons/vsc";
 
 
 function Feedbackpage(){
@@ -33,7 +33,7 @@ function Feedbackpage(){
 
             <section className="area-feedback">
                 <div className="area-form">
-                <div className="div-titulo-icon"><h1 className="titulo-feedback">FEEDBACK </h1><BsChatLeftText fontSize={30} color="white"/></div>
+                <div className="div-titulo-icon"><h1 className="titulo-feedback">FEEDBACK </h1><VscFeedback fontSize={30} color="white"/></div>
                     <div className="divisao">
                      <div className="teste">
                         <form className="avaliacao-feedback" onSubmit={handleSing}>

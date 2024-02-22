@@ -104,14 +104,18 @@
 
 .bts button{
 
-    background-color: white;
-    color: black;
-    font-size: 16px;
+    background-color: aliceblue;
+    color: #1D57BB;
+    font-size: 15px;
     cursor: pointer;  
     border-radius: 7px;
-    width: 130px;
+    width: 140px;
     height: 45px;
 
+}
+.bts button:hover{
+    background: #0B1E3F;
+    color: aliceblue;
 }
 
 .login-background{

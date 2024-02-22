@@ -13,7 +13,9 @@ function App() {
     <>
     <Toaster richColors />
     <Header/>
+    <main className='main-global'>
     <MainRoutes/>
+    </main>
     <Footer/>
       
     </>

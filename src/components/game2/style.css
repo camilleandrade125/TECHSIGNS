@@ -11,7 +11,7 @@
 .Tempo{
   font-size: 30px;
   color: #dddbd6;
-  border-radius: 30px;
+  border-radius: 8px;
   margin-top: 0px;
   justify-content: center;
   margin-top: 12px;
@@ -19,6 +19,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  border: 2px solid yellow;
+  padding: 0 16px;
+  background-color: #0B1E3F;
 }
 
 
@@ -123,8 +126,9 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     }
-    
-    
+.btn-Libras button{   
+    background: #00a2ff;
+}
 .btn-Libras button:active,
 .btn-TI button:active{
     box-shadow: none;
