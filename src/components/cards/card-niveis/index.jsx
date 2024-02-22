@@ -12,11 +12,11 @@ function CardNiveis ({nivel, link_1, link_2, link_3, link_4, link_5}){
         <div className="card-metade">
           <div className="fases"><span>Fases</span><FaHandPointDown /></div>
             <div className="botoes-flex">
-              <Link to={link_1} className="botoes-jogar-1 botoes-style">.</Link>
-              <Link to={link_2} className="botoes-jogar-2 botoes-style">.</Link>
-              <Link to={link_3} className="botoes-jogar-3 botoes-style">.</Link>
-              <Link to={link_4} className="botoes-jogar-4 botoes-style">.</Link>
-              <Link to={link_5} className="botoes-jogar-5 botoes-style">.</Link>
+              <Link to={link_1} className="botoes-jogar-1 botoes-style estilo-botao-global"></Link>
+              <Link to={link_2} className="botoes-jogar-2 botoes-style estilo-botao-global"></Link>
+              <Link to={link_3} className="botoes-jogar-3 botoes-style estilo-botao-global"></Link>
+              <Link to={link_4} className="botoes-jogar-4 botoes-style estilo-botao-global"></Link>
+              <Link to={link_5} className="botoes-jogar-5 botoes-style estilo-botao-global"></Link>
             </div>
           </div>
         </div>

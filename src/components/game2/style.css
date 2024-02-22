@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
 }
 
 
@@ -35,7 +38,7 @@
   justify-content: center;
   }
 
-  .pause-state2{
+  .pause-state{
     top:30px;
     background-color: #363532;
     display: flex;
@@ -70,16 +73,18 @@
     position: absolute;
     z-index: 3;
     transform: translate(490px, 0px);
-    }
-    
+  }
+
   .btn-Libras,
   .btn-TI {
     display: flex;
+    width: 100%;
     flex-direction: row;
     align-items: center;
     position: absolute;
-    left: 50%; 
-    transform: translateX(-50%);
+    z-index: 1;
+    margin-top: 60px;
+    justify-content: center;
   }
   
   .btn-TI {
@@ -89,8 +94,8 @@
     top: 370px;
   }
 
-  .btn-Libras button,
-  .btn-TI button {
+.btn-Libras button,
+.btn-TI button {
     width: 200px;
     height: 200px;
     background-color: #00a2ff;
@@ -99,3 +104,39 @@
     margin: 0 50px;
     cursor: pointer;
   }
+
+  .btn-Libras button,
+  .btn-TI button{
+    color: #1D57BB;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 2px solid #1D57BB;
+    box-shadow: 10px 10px 0 #aaaa;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+    cursor: pointer;
+    font-family:  'PaytoneOne', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+    
+    
+.btn-Libras button:active,
+.btn-TI button:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.btn-TI button:hover{
+  background: #0B1E3F;
+  color: aliceblue;
+}
+
+.btn-Libras button:hover{
+  background: yellow;
+  color: black;
+}

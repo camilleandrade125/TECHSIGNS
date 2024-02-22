@@ -2,23 +2,18 @@ import "./style.css"
 function Niveis({nome_jogo, descriscao_jogo,imagem_descricao}){
     return(
         <>
-         <main>
+         <main className="main">
           <section className="infomacoes-jogo-1">
           
-          <div className="titulo-nome-jogo">
-            <h1>{nome_jogo}</h1>
-          </div>
-
-          <div className="flex-nivel">
-            <div className="info-jogo-1">
-              <p>{descriscao_jogo}</p>
+            <div className="titulo-info">
+            <h1 className="titulo-nome-jogo">{nome_jogo}</h1>
+            <p className="info-jogo-1">{descriscao_jogo}</p>
             </div>
 
             <div className="img-jogo-nivel">
               <img src={imagem_descricao}/>
-
             </div>
-          </div>
+
           </section>
         
          </main>

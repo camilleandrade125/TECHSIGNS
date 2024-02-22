@@ -4,13 +4,14 @@
     margin: auto;
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    flex-direction: column;
+    gap: 40px;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .titulo-nome-jogo{
-    font-size: 30px;
+    font-size: 60px;
     color: yellow;
     font-family:  'PaytoneOne', sans-serif;
     font-weight: 500;
@@ -18,8 +19,9 @@
     letter-spacing: 3px;
     text-shadow: black 0.1em 0.1em;
     letter-spacing: 7px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    
+
 }
 
 .flex-nivel{
@@ -45,10 +47,5 @@
 .img-jogo-nivel img{
     width:300px;
     height: 250px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 60px
+   
 }

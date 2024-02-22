@@ -1,12 +1,16 @@
 .perfil{
     width: 600px;
     height: 600px;
+    padding-top: 20px;
     margin: auto;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 50px;
+    background: #072354;
+    border-radius: 40px;
 }
+    
 .perfil h2{
     font-size: 30px;
     color: yellow;

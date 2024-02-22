@@ -154,6 +154,11 @@ function Telajogo1() {
     setButtons((prevButtons) => [...prevButtons].sort(() => Math.random() - 0.5));
   };
 
+  const handleVoltar = () => {
+    window.location.reload()
+    window.location.href = "/niveis_jogo2";
+  };
+
   return (
     <>
       {gameOver ? (
@@ -166,7 +171,9 @@ function Telajogo1() {
           <button className="fim" onClick={handleRestart}>
             Reiniciar
           </button>
-          <button className="fim">Sair</button>
+          <button className="fim" onClick={handleVoltar}>
+            Sair
+          </button> 
         </div>
       ) : (
         <div className="Fase1">
@@ -179,16 +186,18 @@ function Telajogo1() {
                 <button className="fim" onClick={handleReset}>
                   Reiniciar
                 </button>
-                  <Link to='/niveis_jogo1' className="fim">Sair</Link>
+                <button className="fim" onClick={handleVoltar}>
+                Sair
+              </button> 
               </div>
             )}
             <div className="container-top">
                 
-                <button className="pause-button" onClick={handlePause}><TbPlayerPause fontSize={25}/></button>
+                <button className="pause-button estilo-botao-global" onClick={handlePause}><TbPlayerPause fontSize={25}/></button>
                 
                 <div className="top-message">{topMessage}</div>
                 
-                <div className="Tempo"><LuAlarmClock fontSize={25}/>{timer}s</div>
+                <div className="Temporizador"><LuAlarmClock fontSize={25}/>{timer}s</div>
                 
             </div>
 
@@ -200,7 +209,7 @@ function Telajogo1() {
 
 
             
-            <div className="Grade-Buttons">
+            <div className="Grade-Buttons ">
               {buttons.map((button) => (
                 <button key={button.id} onClick={() => handleButtonClick(button.id)}>
                   <img src={button.image} alt={`Botão ${button.id}`} />

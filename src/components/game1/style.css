@@ -2,39 +2,78 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
 }
-
 
 .top-message{
-  background-color: antiquewhite;
-  width: 95px;
-  height: 25px;
+  width: 140px;
+  height: 40px;
   text-align: center;
-  border-radius: 15px;
-  margin-top: 12px;
-  margin-left: 560px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  color: yellow;
+  font-weight: 500;
+  font-family:  'PaytoneOne', sans-serif;
+  letter-spacing: 2px;;
+  text-shadow: black 0.1em 0.1em;
+  text-transform: uppercase;
 }
 
-.Tempo{
+.Temporizador{
   font-size: 30px;
   color: #dddbd6;
-  border-radius: 30px;
-  margin-top: 0px;
+  border-radius: 8px;
   justify-content: center;
-  margin-top: 12px;
-  margin-left: 525px;
   display: flex;
   align-items: center;
   gap: 10px;
+  border: 2px solid yellow;
+  padding: 0 16px;
+  background-color: #0B1E3F;
 }
+
+.pause-button {
+  height: 50px;
+  width: 50px;
+  border: 3px solid grey;
+  border-radius: 10px;
+  font-size: 1.5em;
+  cursor:pointer;
+  display: flex;    
+  align-items: center;
+  justify-content: center;
+}
+.pause-button:hover{
+  background: #0B1E3F;
+  color: yellow;
+}
+
 .telgame{
 display: flex;
 flex-direction: column;
 gap: 10px;
 }
 
-.container-center,
-.container-center2{
+.Pause-state{
+  margin-top: 50px;
+  margin-left: 30px;
+  display: flex;
+  width: 300px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 3px solid rgb(73, 70, 70);
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  transform: translate(490px, 0px);
+}
+
+.container-center{
   display: flex;
   position: relative;
   justify-content: center;
@@ -49,11 +88,10 @@ display: flex;
 width: 250px;
 height: 400px;
 margin: auto;
-justify-content: center;
-align-items: center;
 border-radius: 25px;
 border: 3px solid rgb(73, 70, 70);
 position: absolute;
+object-fit: cover;
 z-index: 1;
 }
 
@@ -63,10 +101,10 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 padding: 20px;
+margin: 0 100px;
 }
   
-.Grade-Buttons button,
-.Grade-Buttons2 button {
+.Grade-Buttons button{
 width: 130px;
 height: 130px;
 background-color: #006666; 
@@ -77,9 +115,39 @@ margin: 0 10px;
 cursor: pointer;
 }
 
+.Grade-Buttons button{
+  color: #1D57BB;
+  border-radius: 10px;
+  background-color: aliceblue;
+  border: 2px solid #1D57BB;
+  box-shadow: 10px 10px 0 #aaaa;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: center;
+  cursor: pointer;
+  font-family:  'PaytoneOne', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  }
+  
+  
+  .Grade-Buttons button:active{
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.Grade-Buttons button:hover{
+  background: #0B1E3F;
+  color: aliceblue;
+}
 
 
-  .fim{
+
+
+.fim{
     background-color: rgb(62, 62, 223);
     border: solid rgb(197, 194, 194);
     border-radius: 8px;
@@ -93,10 +161,10 @@ cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
 
-  .fim-game {
+.fim-game {
     background-color: #363532;
     display: flex;
     width: 400px;
@@ -112,6 +180,5 @@ cursor: pointer;
     color: white;
     position: absolute;
     z-index: 3;
-    transform: translate(490px, 0px);
-    }
-    
+    transform: translate(490px, 0px);
+}

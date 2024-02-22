@@ -148,37 +148,15 @@
 }
 
 .button-feedback{
-    color: #1D57BB;
     width: 170px;
     height: 50px;
-    border-radius: 10px;
-    background-color: aliceblue;
-    border: 2px solid #1D57BB;
-    box-shadow: 2px 5px 0 #aaaa;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    justify-content: center;
     font-size: 22px;
-    cursor: pointer;
-    font-family:  'PaytoneOne', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    }
-    
-    
-.button-feedback:active{
-    box-shadow: none;
-    transform: translateY(5px);
 }
 
 .button-feedback:hover{
-    background: #0B1E3F;
-    color: aliceblue;
-}
-
+        background: #0B1E3F;
+        color: aliceblue;
+    }
 
 .icon-amarelo{
     color: yellow;

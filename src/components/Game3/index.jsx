@@ -29,6 +29,7 @@ import X from "../../assets/Alfabetoemlibras/X.png";
 import Y from "../../assets/Alfabetoemlibras/Y.png";
 import Z from "../../assets/Alfabetoemlibras/Z.png";
 import Monitor from "../../assets/monitor.png"
+import { TbPlayerPause } from "react-icons/tb";
 
 function Telajogo3(){
   const [containerWidth, setContainerWidth] = useState(1000);
@@ -256,10 +257,14 @@ function Telajogo3(){
   };
   
 
+  const handleVoltar = () => {
+    window.location.reload()
+    window.location.href = "/niveis_jogo3";
+  };
 
   return (
     <>
-      <button className="pause-button" onClick={() => setIsPaused(!isPaused)}><b>||</b></button>
+      <button className="pause-button estilo-botao-global" onClick={() => setIsPaused(!isPaused)}><b> <TbPlayerPause fontSize={25}/></b></button>
       <div className="pergunta" style={{ fontSize: '25px' }}>
         <div style={{ marginTop: '20px' }}>
           {desiredWords[0].split('').map((letter, index) => (
@@ -271,7 +276,9 @@ function Telajogo3(){
         <div className="Pause-state">
           <button className="fim" onClick={handleResume}>Retornar</button>
           <button className="fim" onClick={handleReset}>Reiniciar</button>
-          <button className="fim">Sair</button>
+          <button className="fim" onClick={handleVoltar}>
+            Sair
+          </button> 
         </div>
       )}
       {isGameOver && (
@@ -281,7 +288,9 @@ function Telajogo3(){
           <p>Colisões erradas: {incorrectCollisions}</p>
           <p>Análise Final: {analiseFinal}</p>
           <button className="fim" onClick={handleReset}>Reiniciar</button>
-          <button className="fim">Sair</button>
+          <button className="fim" onClick={handleVoltar}>
+            Sair
+          </button> 
         </div>
       )}
       <div className="Container-jogo">

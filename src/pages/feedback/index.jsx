@@ -57,7 +57,7 @@ function Feedbackpage(){
                         onChange={(e)=>setFeedback(e.target.value)}
                         required>
                         </textarea>
-                        <button className="button-feedback" type="submit">Enviar<PiRocketLaunchDuotone fontSize={30}/></button>
+                        <button className="button-feedback estilo-botao-global" type="submit">Enviar<PiRocketLaunchDuotone fontSize={30}/></button>
     
                     </form>
                     </div>

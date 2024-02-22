@@ -1,7 +1,7 @@
 
 import './App.css'
 import MainRoutes from './routes';
-import Foooter from './components/footer'
+import Footer from './components/footer-condicao'
 import Header from './components/header';
 import { Toaster } from 'sonner';
 
@@ -14,7 +14,7 @@ function App() {
     <Toaster richColors />
     <Header/>
     <MainRoutes/>
-    <Foooter/>
+    <Footer/>
       
     </>
   )

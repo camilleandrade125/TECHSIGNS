@@ -14,7 +14,7 @@ export function NiveisPage3(){
         descriscao_jogo={'No jogo "Wordway", os jogadores enfrentam o desafio de colidir com os sinais corretos para formar palavras. Cada nível apresenta uma palavra a ser construída, exigindo destreza e raciocínio. Com gráficos envolventes.'}
         imagem_descricao={img_jogo_3}/>
         <section className="card-flex">
-          <CardNiveis nivel={1} link_1='' link_2='' link_3='' link_4='' link_5=''/>
+          <CardNiveis nivel={1} link_1='/g3nivel1' link_2='' link_3='' link_4='' link_5=''/>
           <CardNiveis nivel={2} link_1='' link_2='' link_3='' link_4='' link_5=''/>
           <CardNiveis nivel={3} link_1='' link_2='' link_3='' link_4='' link_5=''/>
           <CardNiveis nivel={4} link_1='' link_2='' link_3='' link_4='' link_5=''/>

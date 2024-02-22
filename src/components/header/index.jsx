@@ -3,7 +3,7 @@ import "./style.css"
 import img_logo_text from '../../../public/techsigns-logo.png'
 import { useLocation } from 'react-router-dom'
 import HeaderLogin from '../header-login'
-import { FaHands } from "react-icons/fa6";
+import { TbLogout } from "react-icons/tb";
 
 
 
@@ -41,9 +41,8 @@ function Header(){
                             <li><Link to="/conta" className="navbar-link">PERFIL</Link></li>
                             <li><Link to="/feedback" className="navbar-link">FEEDBACK</Link></li>
                             <li><Link to="/sobre" className="navbar-link">SOBRE</Link></li>
+                            <button className='button-logout'><Link to="/login"><TbLogout className="logout"/></Link></button>
                         </ul>
-
-                        <FaHands className="hands"/>
                     </nav>
                     </div>
                 </header>

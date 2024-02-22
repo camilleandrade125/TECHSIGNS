@@ -16,6 +16,30 @@ a{
     color: white;
 }
 
+.estilo-botao-global{
+    color: #1D57BB;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 2px solid #1D57BB;
+    box-shadow: 2px 5px 0 #aaaa;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+    cursor: pointer;
+    font-family:  'PaytoneOne', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+    
+    
+.estilo-botao-global:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
 @font-face {
     font-family: Montserrat;
     src: url(../src/assets/Fonts/Montserrat-VariableFont_wght.ttf);

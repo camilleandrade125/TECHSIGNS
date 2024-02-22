@@ -10,6 +10,8 @@ import Larquivo from "../../Assets/Datilologia/Arquivos.png";
 import LBackup from "../../Assets/Datilologia/Backup.png";
 import LBancodedados from "../../Assets/Datilologia/Banco_de_dados.png";
 import LBinario from "../../Assets/Datilologia/Binario.png";
+import { TbPlayerPause } from "react-icons/tb";
+import { LuAlarmClock } from "react-icons/lu";
 
 function Telajogo2() {
   const [gameOver, setGameOver] = useState(false);
@@ -175,6 +177,12 @@ function Telajogo2() {
   setPaused(false);
   };
 
+  const handleVoltar = () => {
+    window.location.reload()
+    window.location.href = "/niveis_jogo1";
+  };
+
+
   return (
     <>
       {gameOver ? (
@@ -186,28 +194,32 @@ function Telajogo2() {
           <button className="fim" onClick={handleRestart}>
             Reiniciar
           </button>
-          <button className="fim">Sair</button>
+          <button className="fim" onClick={handleVoltar}>
+            Sair
+          </button>     
         </div>
       ) : paused ? (
-        <div className="pause-state2">
+        <div className="pause-state">
           <button className="fim" onClick={handleResume}>
             Retornar
           </button>
           <button className="fim" onClick={handleRestart}>
             Reiniciar
           </button>
-          <button className="fim">Sair</button>
+          <button className="fim" onClick={handleVoltar}>
+            Sair
+          </button> 
         </div>
       ) : (
         <>
           <div className="container-top2">
             <button
-              className="pause-button"
+              className="pause-button estilo-botao-global"
               onClick={() => setPaused(!paused)}
             >
-              {paused ? "▶" : "||"}
+              {paused ? "▶" : <TbPlayerPause fontSize={25}/>}
             </button>
-            <div className="Tempo">{timer}s</div>
+            <div className="Tempo"><LuAlarmClock fontSize={25}/> {timer}s</div>
           </div>
 
           <div className="btn-TI">

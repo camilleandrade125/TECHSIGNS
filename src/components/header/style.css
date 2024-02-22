@@ -15,10 +15,8 @@ nav{
     margin: auto;
     height: 55px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    align-content: center;
 }
 
 
@@ -36,6 +34,7 @@ nav{
     flex-direction: row;
     list-style: none;
     gap: 30px;
+    align-items: center;
 
 }
 
@@ -48,7 +47,6 @@ nav{
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    
 }
 
 .navbar-link::before{
@@ -75,16 +73,18 @@ nav{
     transition: 0.3s all;
 }
 
-.navbar-link:active{
-    box-shadow: box-shadow 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-    transform: translateY(4px);
+.button-logout{
+    background: #072354;
+    color: yellow;
+    border: none;
+    
 }
 
-.hands{
-    font-size: 40px;
+.logout{
+    font-size: 28px;
     color: yellow;
 }
 
-.hands:hover{
+.logout:hover{
     color: whitesmoke;
 }

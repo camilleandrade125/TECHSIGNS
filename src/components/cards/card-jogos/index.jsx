@@ -17,7 +17,7 @@ function CardJogos ({img, nome_jogos, link}){
                 <span className="name-jogos">{nome_jogos}</span>
                 </div>
                 <div className='botao-niveis'>
-                    <Link to={link} className="link-niveis"><span>NÍVEIS</span> <FaHandPointRight /></Link>
+                    <Link to={link} className="link-niveis estilo-botao-global"><span>NÍVEIS</span> <FaHandPointRight /></Link>
                 </div>
             </div>
 
