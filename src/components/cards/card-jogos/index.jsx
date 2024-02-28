@@ -6,24 +6,18 @@ import { LuGamepad2 } from "react-icons/lu";
 
 function CardJogos ({img, nome_jogos, link}){
     return (
-        
-
-        <div className="flex">
+    <>
 
             <div className="card">
-                <img src={img}/>
-                <div className='name-icons'>
-                <LuGamepad2 color='white' fontSize={25}/>
+            <div className='logo-jogo'><LuGamepad2 color='#0B1E3F' fontSize={25} /></div>
+                <img src={img} />
                 <span className="name-jogos">{nome_jogos}</span>
-                </div>
-                <div className='botao-niveis'>
+                <div className='conteudo-jogo'>
                     <Link to={link} className="link-niveis estilo-botao-global"><span>NÍVEIS</span> <FaHandPointRight /></Link>
                 </div>
             </div>
+        </>
 
-        </div>
-
-        
     )
 }
 

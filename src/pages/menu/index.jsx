@@ -20,7 +20,7 @@ function MenuPage(){
                 <section className="sessao-info"> 
                     <div className="div-info">
                         <h4 className="sessao-info-subtitulo">SEJA BEM VINDO!</h4>
-                        <h1 className="sessao-info-titulo">TECHSIGNS: SOFTWARE EDUCATIVO ADAPTADO A LIBRAS</h1>
+                        <h1 className="sessao-info-titulo"><span className="techsings-titulo">TECHSIGNS:</span> SOFTWARE EDUCATIVO ADAPTADO A LIBRAS</h1>
                         <hr />
                         <p className="sessao-info-texto">Conectando mundos silenciosos: Aprenda <span className="palavras-importantes">&lt;Informática&gt;</span> de forma divertida com nossos <span className="palavras-importantes">&lt;Jogos Inclusivos !&gt;</span> .</p>       
                     </div>

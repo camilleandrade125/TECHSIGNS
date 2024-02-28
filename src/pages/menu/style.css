@@ -24,7 +24,7 @@
 }
 
 .sessao-info-subtitulo{
-    color: yellow;
+    color: #BcE5ff;
     font-weight: 700;
     text-transform: uppercase;
     font-family:  'Montserrat', sans-serif;
@@ -38,6 +38,10 @@
     font-weight: 500;
     font-family:  'PaytoneOne', sans-serif;
     letter-spacing: 2px;
+}
+
+.techsings-titulo{
+    color: yellow;
 }
 
 .sessao-info-texto{
