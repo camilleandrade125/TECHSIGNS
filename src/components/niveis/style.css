@@ -10,6 +10,12 @@
     align-items: center;
 }
 
+.titulo-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .titulo-nome-jogo{
     font-size: 60px;
     color: yellow;

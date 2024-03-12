@@ -7,20 +7,20 @@
 .card {
     background-color: #0B1E3F;
     width: 200px;
-    height: 270px;
+    height: 260px;
     border-radius: 12px;
     box-shadow: 4px 4px 12px black;
     transition: .35s;
     border: 5px solid yellow;
     display: flex; 
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
     position: relative;
     overflow: hidden;
 }
 
 .card:hover{
-    transform: scale(1.1); 
+    transform: translateY(-6px);
 }
 
 
@@ -53,21 +53,12 @@
     justify-content: center;
 }
 
-.name-jogos{
-    text-transform: uppercase;
-    font-size: 20px;
-    color: aliceblue;
-    font-family:  'PaytoneOne', sans-serif;
-    font-weight: 500;
-    padding-left: 10px;
-} 
-
 .link-niveis{
     display: inline-block;
     color: #1D57BB;
     width: 170px;
     height: 50px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .link-niveis:hover{

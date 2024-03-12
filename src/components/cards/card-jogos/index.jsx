@@ -11,9 +11,8 @@ function CardJogos ({img, nome_jogos, link}){
             <div className="card">
             <div className='logo-jogo'><LuGamepad2 color='#0B1E3F' fontSize={25} /></div>
                 <img src={img} />
-                <span className="name-jogos">{nome_jogos}</span>
                 <div className='conteudo-jogo'>
-                    <Link to={link} className="link-niveis estilo-botao-global"><span>NÍVEIS</span> <FaHandPointRight /></Link>
+                    <Link to={link} className="link-niveis estilo-botao-global"><span className="name-jogos">{nome_jogos}</span> <FaHandPointRight /></Link>
                 </div>
             </div>
         </>

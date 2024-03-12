@@ -10,7 +10,7 @@ function CardNiveis ({nivel, link_1, link_2, link_3, link_4, link_5}){
           <span className="nivel">{nivel}</span>
         </div>
         <div className="card-metade">
-          <div className="fases"><span>Fases</span><FaHandPointDown /></div>
+          <div className="fases"><span>FASES</span></div>
             <div className="botoes-flex">
               <Link to={link_1} className="botoes-jogar-1 botoes-style estilo-botao-global"></Link>
               <Link to={link_2} className="botoes-jogar-2 botoes-style estilo-botao-global"></Link>

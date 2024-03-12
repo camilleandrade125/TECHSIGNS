@@ -15,8 +15,8 @@ nav{
     height: 55px;
     display: flex;
     align-items: center;
-    padding: 0 100px;
     justify-content: space-between;
+    padding: 0 2%;
 }
 
 
@@ -74,10 +74,11 @@ nav{
 }
 
 .button-logout{
-    background: #072354;
+    background: #1d57bb46;
     color: yellow;
     border: none;
-    
+    padding: 6px 10px;
+    border-radius: 8px;
 }
 
 .logout{
