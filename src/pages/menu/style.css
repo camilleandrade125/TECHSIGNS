@@ -15,12 +15,12 @@
 }      
 
 .div-info{
-    width: 700px;
+    width: 668px;
     height: 350px;
     display: flex;
     flex-direction: column;  
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .sessao-info-subtitulo{
@@ -32,9 +32,9 @@
 }
 
 .sessao-info-titulo{
-    font-size:45px;
+    font-size:55px;
     color:  #0B1E3F;
-    line-height:40px;
+    line-height:50px;
     font-weight: 500;
     font-family:  'PaytoneOne', sans-serif;
     letter-spacing: 2px;

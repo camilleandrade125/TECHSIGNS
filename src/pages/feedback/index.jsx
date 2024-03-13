@@ -7,6 +7,8 @@ import { PiRocketLaunchDuotone } from "react-icons/pi";
 import { LiaStarSolid } from "react-icons/lia";
 import { VscFeedback } from "react-icons/vsc";
 
+import { Titulo } from '../../components/styled-components';
+
 
 function Feedbackpage(){
 
@@ -33,7 +35,7 @@ function Feedbackpage(){
 
             <section className="area-feedback">
                 <div className="area-form">
-                <div className="div-titulo-icon"><h1 className="titulo-feedback">FEEDBACK </h1><VscFeedback fontSize={30} color="white"/></div>
+                <div className="div-titulo-icon"><Titulo>FEEDBACK </Titulo><VscFeedback fontSize={30} color="white"/></div>
                     <div className="divisao">
                      <div className="teste">
                         <form className="avaliacao-feedback" onSubmit={handleSing}>

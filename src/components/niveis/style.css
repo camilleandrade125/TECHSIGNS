@@ -16,38 +16,9 @@
     gap: 20px;
 }
 
-.titulo-nome-jogo{
-    font-size: 60px;
-    color: yellow;
-    font-family:  'PaytoneOne', sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: black 0.1em 0.1em;
-    letter-spacing: 7px;
-    text-align: center;
-    
-
-}
-
 .flex-nivel{
     display: flex;
     gap:70px;
-}
-
-.info-jogo-1{
-    color: aliceblue;
-    font-size: 19px;
-    text-align: justify;
-    font-weight: 500;
-    color: #d1d6e4;
-    background-color: #0723544b;
-    border-radius: 10px;
-    font-family:  'PaytoneOne', sans-serif;
-    font-weight: 800; 
-    width: 800px;
-    padding: 10px 20px 10px 20px;
-    letter-spacing: 2px;
 }
 
 .img-jogo-nivel img{

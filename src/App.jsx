@@ -7,6 +7,7 @@ import { Toaster } from 'sonner';
 
 
 
+
 function App() {
 
   return (
@@ -17,7 +18,6 @@ function App() {
     <MainRoutes/>
     </main>
     <Footer/>
-      
     </>
   )
 }

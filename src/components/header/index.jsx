@@ -19,7 +19,8 @@ function Header(){
         "/niveis_jogo1",
         "/niveis_jogo2",
         "/niveis_jogo3",
-        "/alfabeto_libras"
+        "/alfabeto_libras",
+        "/ranking"
     ]
 
     if ( rotasComHeaderDeLogin.includes(pathname) ){

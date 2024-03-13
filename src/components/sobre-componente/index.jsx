@@ -1,12 +1,15 @@
 import "./style.css"
 import CardInformacoes from "../cards/card-informacoes";
 
+// imports styled components
+import { Titulo } from '../../components/styled-components';
+
 function Bodysobre(){
     return  (
         <section className="space-sobre">
         
             <main className="infos-card-space">
-                <h2>Sobre o Projeto</h2>
+                <Titulo>Sobre o Projeto</Titulo>
                     <div id="sobre-projeto">
                         <h4>    
                             O TechSigns apresenta a criação de um software contendo uma variedade de jogos educativos adaptados à Libras 

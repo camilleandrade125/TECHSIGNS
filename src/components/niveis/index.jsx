@@ -1,4 +1,9 @@
 import "./style.css"
+
+// imports styled components global
+import { Titulo } from '../../components/styled-components';
+import { Paragrafo_info_jogo } from "../../components/styled-components";
+
 function Niveis({nome_jogo, descriscao_jogo,imagem_descricao}){
     return(
         <>
@@ -6,8 +11,8 @@ function Niveis({nome_jogo, descriscao_jogo,imagem_descricao}){
           <section className="infomacoes-jogo-1">
           
             <div className="titulo-info">
-            <h1 className="titulo-nome-jogo">{nome_jogo}</h1>
-            <p className="info-jogo-1">{descriscao_jogo}</p>
+            <Titulo>{nome_jogo}</Titulo>
+            <Paragrafo_info_jogo >{descriscao_jogo}</Paragrafo_info_jogo>
             </div>
 
             <div className="img-jogo-nivel">

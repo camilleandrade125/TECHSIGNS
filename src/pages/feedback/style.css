@@ -70,15 +70,6 @@
   width: 250px;
 }
 
-.titulo-feedback{
-    text-align: center;
-    font-size: 30px;
-    color: yellow;
-    font-weight: 500;
-    font-family:  'PaytoneOne', sans-serif;
-    letter-spacing: 2px;;
-    text-shadow: black 0.1em 0.1em;
-}
 .div-titulo-icon{
     display: flex;
     flex-direction: row;

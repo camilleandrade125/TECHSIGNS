@@ -1,6 +1,7 @@
 import './style.css';
-import {Link} from 'react-router-dom'
-import { FaHandPointDown } from "react-icons/fa6";
+
+import { Botao_niveis } from '../../styled-components';
+
 function CardNiveis ({nivel, link_1, link_2, link_3, link_4, link_5}){
     return(
         <>
@@ -12,11 +13,11 @@ function CardNiveis ({nivel, link_1, link_2, link_3, link_4, link_5}){
         <div className="card-metade">
           <div className="fases"><span>FASES</span></div>
             <div className="botoes-flex">
-              <Link to={link_1} className="botoes-jogar-1 botoes-style estilo-botao-global"></Link>
-              <Link to={link_2} className="botoes-jogar-2 botoes-style estilo-botao-global"></Link>
-              <Link to={link_3} className="botoes-jogar-3 botoes-style estilo-botao-global"></Link>
-              <Link to={link_4} className="botoes-jogar-4 botoes-style estilo-botao-global"></Link>
-              <Link to={link_5} className="botoes-jogar-5 botoes-style estilo-botao-global"></Link>
+              <Botao_niveis to={link_1} className="botoes-jogar-1"></Botao_niveis>
+              <Botao_niveis to={link_2} className="botoes-jogar-2"></Botao_niveis>
+              <Botao_niveis to={link_3} className="botoes-jogar-3"></Botao_niveis>
+              <Botao_niveis to={link_4} className="botoes-jogar-4"></Botao_niveis>
+              <Botao_niveis to={link_5} className="botoes-jogar-5"></Botao_niveis>
             </div>
           </div>
         </div>
@@ -25,3 +26,4 @@ function CardNiveis ({nivel, link_1, link_2, link_3, link_4, link_5}){
 }
 
 export default CardNiveis
+

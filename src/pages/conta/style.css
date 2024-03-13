@@ -11,18 +11,6 @@
     border-radius: 40px;
 }
     
-.perfil h2{
-    font-size: 30px;
-    color: yellow;
-    font-family:  'PaytoneOne', sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: black 0.1em 0.1em;
-    letter-spacing: 7px;
-    display: flex;
-    justify-content: center;
-}
 
 .perfil ul{
     font-size: 25px;

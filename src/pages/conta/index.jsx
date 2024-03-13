@@ -2,11 +2,16 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./style.css"
 import { useLocation } from 'react-router-dom';
+
+// imports react icons
 import { MdOutlineEmail } from "react-icons/md";
 import { VscAccount } from "react-icons/vsc";
 import { BsCalendarDate } from "react-icons/bs";
 import { GoFileBinary } from "react-icons/go";
 import { MdOutlineBadge } from "react-icons/md";
+
+// imports styled components
+import { Titulo } from '../../components/styled-components';
 
 const Profile = () => {
   const [userData, setUserData] = useState({});
@@ -33,7 +38,7 @@ const Profile = () => {
 
   return (
     <div className='perfil'>
-      <h2>Perfil do Usuário</h2>
+      <Titulo>Perfil do Usuário</Titulo>
       <ul className='lista-perfil'>
         <li>Nome: {userData.nome_completo}<MdOutlineBadge className='icon-perfil'/></li>
         <li>Email: {userData.email} <MdOutlineEmail className='icon-perfil'/></li>
