@@ -20,7 +20,7 @@ function MainRoutes(){
 
     return (
         <Routes>
-            <Route path="/login" element={<LoginPage/>}/>
+            <Route path="/*" element={<LoginPage/>}/>
             <Route path="/menu" element={<MenuPage/>}/>   
             <Route path="/conta" element={<MenuConta/>}/>
             <Route path="/sobre" element={<MenuSobre/>}/>
@@ -29,7 +29,7 @@ function MainRoutes(){
             <Route path="/niveis_jogo1" element={<NiveisPage/>}/>
             <Route path="/niveis_jogo2" element={<NiveisPage2/>}/>
             <Route path="/niveis_jogo3" element={<NiveisPage3/>}/>
-            <Route path="/*" element={<ErroPage/>}/> 
+            <Route path="/erro" element={<ErroPage/>}/> 
             <Route path="/g1nivel1" element={<Nivel1G1/>}/>
             <Route path="/g2nivel1" element={<Nivel1G2/>}/>
             <Route path="/g3nivel1" element={<Nivel1G3/>}/>
