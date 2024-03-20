@@ -2,14 +2,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./style.css";
 import shuffle from "lodash/shuffle";
-import IArquivo from "../../Assets/ImagensComponentes/Arquivos.png";
-import IBackup from "../../Assets/ImagensComponentes/Backup.png";
-import IBancodedados from "../../Assets/ImagensComponentes/Banco de dados.png";
-import IBinario from "../../Assets/ImagensComponentes/Binario.png";
-import Larquivo from "../../Assets/Datilologia/Arquivos.png";
-import LBackup from "../../Assets/Datilologia/Backup.png";
-import LBancodedados from "../../Assets/Datilologia/Banco_de_dados.png";
-import LBinario from "../../Assets/Datilologia/Binario.png";
+import IArquivo from "../../assets/ImagensComponentes/Arquivos.png";
+import IBackup from "../../assets/ImagensComponentes/Backup.png";
+import IBancodedados from "../../assets/ImagensComponentes/Banco de dados.png";
+import IBinario from "../../assets/ImagensComponentes/Binario.png";
+import Larquivo from "../../assets/Datilologia/Arquivos.png";
+import LBackup from "../../assets/Datilologia/Backup.png";
+import LBancodedados from "../../assets/Datilologia/Banco_de_dados.png";
+import LBinario from "../../assets/Datilologia/Binario.png";
 import { TbPlayerPause } from "react-icons/tb";
 import { LuAlarmClock } from "react-icons/lu";
 
