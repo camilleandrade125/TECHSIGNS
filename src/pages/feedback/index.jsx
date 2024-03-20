@@ -1,6 +1,6 @@
 import "./style.css"
 import { useState } from 'react'
-import robo from '../../../public/robo!.gif'
+import robo from '../../../public/robo.gif'
 import  Botao_Voltar  from "../../components/botao-voltar"
 import fundo from '../../../public/img-feedback.png'
 import { PiRocketLaunchDuotone } from "react-icons/pi";
