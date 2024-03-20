@@ -1,5 +1,5 @@
 import "./style.css"
-import Telajogo2 from "../../../components/Game2"
+import Telajogo2 from "../../../components/game2"
 
 function Nivel1G2(){
 
