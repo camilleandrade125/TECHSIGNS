@@ -51,7 +51,7 @@
 }
 
 .card-metade{
-    background-image: url(../../../public/techsings-fundo-niveis.jpg);
+    background-image: url('/techsings-fundo-niveis.jpg');
     display: flex;
     flex-direction: column;
     height: 130px;
@@ -95,17 +95,17 @@
 }
 
 .botoes-jogar-2{
-    background-image: url(../../../public/nivel-2.png);
+    background-image: url('/nivel-2.png');
 }
 .botoes-jogar-3{
-    background-image: url(../../../public/nivel-3.png);
+    background-image: url('/nivel-3.png');
 }
 .botoes-jogar-4{
-    background-image: url(../../../public/nivel-4.png);
+    background-image: url('/public/nivel-4.png');
 
 }
 .botoes-jogar-5{
-    background-image: url(../../../public/nivel-5.png);
+    background-image: url('/public/nivel-5.png');
 }
 
 
