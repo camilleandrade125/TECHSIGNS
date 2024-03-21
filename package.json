@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"vite --host\" \"npx nodemon src/server.js\"",
-    "build": "vite build",
+    "vercel-build": "concurrently \"vite build\" \"npx prisma migrate deploy\"",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "vercel-build": "npx prisma migrate deploy"
+    "preview": "vite preview"
+  
   },
   "dependencies": {
     "@prisma/client": "^5.8.1",
