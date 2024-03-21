@@ -90,7 +90,8 @@
 }
 
 .botoes-jogar-1{
-    background-image: url(../../../public/nivel-1.png);
+    background-image: url('/nivel-1.png');
+
 }
 
 .botoes-jogar-2{
