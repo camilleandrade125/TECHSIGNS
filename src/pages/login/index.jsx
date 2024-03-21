@@ -45,7 +45,7 @@ function LoginPage() {
       return
     }
 
-    Axios.post("http://localhost:3001/register", {
+    Axios.post("postgresql://db_techsigns_owner:************@ep-dry-smoke-a5fc3hmv.us-east-2.aws.neon.tech/db_techsigns?sslmode=require", {
       nome_completo: nome,
       email: email,
       cpf: cpf,
@@ -70,7 +70,7 @@ function LoginPage() {
       return
     }
   
-    Axios.post("http://localhost:3001/login", {
+    Axios.post("postgresql://db_techsigns_owner:************@ep-dry-smoke-a5fc3hmv.us-east-2.aws.neon.tech/db_techsigns?sslmode=require", {
       email: email,
       senha: senha,
     })
