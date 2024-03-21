@@ -15,6 +15,7 @@ function Header(){
         "/sobre",
         "/menu",
         "/conta",
+        "/",
         "/feedback",
         "/niveis_jogo1",
         "/niveis_jogo2",
@@ -37,7 +38,7 @@ function Header(){
                         </figure>
                     </div>
         
-                        <ul id="page-select"className="navbar-list">
+                        <ul id="page-select" className="navbar-list">
                             <li><Link to="/menu" className="navbar-link">MENU</Link></li>
                             <li><Link to="/conta" className="navbar-link">PERFIL</Link></li>
                             <li><Link to="/feedback" className="navbar-link">FEEDBACK</Link></li>
