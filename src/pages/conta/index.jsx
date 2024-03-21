@@ -45,7 +45,7 @@ const Profile = () => {
         <li>CPF: {userData.cpf} <GoFileBinary className='icon-perfil'/></li>
         <li>Gênero: {userData.genero}<VscAccount className='icon-perfil'/></li>
         <li>Data de Nascimento: {userData.data_nascimento}<BsCalendarDate className='icon-perfil'/></li>
-      </ul>
+      </ul>      
     </div>
   );
 };

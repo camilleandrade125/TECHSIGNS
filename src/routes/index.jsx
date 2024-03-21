@@ -20,8 +20,8 @@ function MainRoutes(){
 
     return (
         <Routes>
-            <Route path="/login" element={<LoginPage/>}/>
-            <Route path="/*" element={<MenuPage/>}/>   
+            <Route path="/*" element={<LoginPage/>}/>
+            <Route path="/menu" element={<MenuPage/>}/>   
             <Route path="/conta" element={<MenuConta/>}/>
             <Route path="/sobre" element={<MenuSobre/>}/>
             <Route path="/feedback" element={<MenuFeedback/>}/>

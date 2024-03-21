@@ -14,6 +14,7 @@ function Header(){
     const rotasComHeaderDeLogin = [
         "/sobre",
         "/menu",
+        "/*",
         "/conta",
         "/feedback",
         "/niveis_jogo1",
