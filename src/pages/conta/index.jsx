@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./style.css"
+import  Botao_Voltar  from "../../components/botao-voltar"
 import { useLocation } from 'react-router-dom';
+import perfil_img from "../../../public/perfil-img.png";
 
 // imports react icons
 import { MdOutlineEmail } from "react-icons/md";
@@ -36,17 +38,38 @@ const Profile = () => {
     getProfileData();
   }, [token]);
 
+  const [nome, setNome] = useState('')
+  const [email, setEmail] = useState('')
+  const [genero, setGenero] = useState('')
+  const [data, setData] = useState('')
+
+  const prevent = (e) => {
+        e.preventDefault()
+        console.log({nome})
+        console.log({email})
+        console.log({genero})
+        console.log({data})
+  }
+
   return (
-    <div className='perfil'>
-      <Titulo>Perfil do Usuário</Titulo>
-      <ul className='lista-perfil'>
-        <li>Nome: {userData.nome_completo}<MdOutlineBadge className='icon-perfil'/></li>
-        <li>Email: {userData.email} <MdOutlineEmail className='icon-perfil'/></li>
-        <li>CPF: {userData.cpf} <GoFileBinary className='icon-perfil'/></li>
-        <li>Gênero: {userData.genero}<VscAccount className='icon-perfil'/></li>
-        <li>Data de Nascimento: {userData.data_nascimento}<BsCalendarDate className='icon-perfil'/></li>
-      </ul>      
-    </div>
+    <>
+    <Botao_Voltar link_voltar='/menu'/>
+    <section className='perfil-section'>
+      <img src={perfil_img} alt="" />
+        <div className='perfil'>
+          <Titulo>Perfil do Usuário</Titulo>
+          <form className='form' onSubmit={prevent}>
+            <ul className='lista-perfil'>
+              <li><span className='input-conta'>Nome:</span><input className='input-valor' type="text" placeholder={userData.nome_completo} onChange={(e)=>setNome(e.target.value)}/><MdOutlineBadge className='icon-perfil'/></li>
+              <li><span className='input-conta'>Email:</span><input className='input-valor' type="text" placeholder={userData.nome_completo} onChange={(e)=>setEmail(e.target.value)}/><MdOutlineEmail className='icon-perfil'/></li>
+              <li><span className='input-conta'>Genero:</span><input className='input-valor' type="text" placeholder={userData.nome_completo} onChange={(e)=>setGenero(e.target.value)}/><VscAccount className='icon-perfil'/></li>
+              <li><span className='input-conta'>Data:</span><input className='input-valor' type="text" placeholder={userData.nome_completo} onChange={(e)=>setData(e.target.value)}/><BsCalendarDate className='icon-perfil'/></li>
+            </ul>   
+            <button className="button-feedback estilo-botao-global" type="submit">salvar</button>
+          </form>   
+        </div>
+      </section>
+    </>
   );
 };
 

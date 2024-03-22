@@ -13,12 +13,14 @@ import { Titulo } from '../../components/styled-components';
 function Feedbackpage(){
 
     const [feedback, setFeedback] = useState('')
-    const [avaliacao, setAvaliacao] = useState('')
+    const [rating, setRating] = useState(null)
+
+    const [hover, setHover] = useState(null)
 
     const handleSing = (e) => {
         e.preventDefault()
         console.log({feedback})
-        console.log({avaliacao})
+        console.log({rating})
     }
 
 
@@ -35,19 +37,32 @@ function Feedbackpage(){
 
             <section className="area-feedback">
                 <div className="area-form">
-                <div className="div-titulo-icon"><Titulo>FEEDBACK </Titulo><VscFeedback fontSize={30} color="white"/></div>
+                <div className="div-titulo-icon"><Titulo>FEEDBACK </Titulo></div>
                     <div className="divisao">
-                     <div className="teste">
                         <form className="avaliacao-feedback" onSubmit={handleSing}>
-                            <div><input type="radio" name={avaliacao} value=" Muito-insatisfeito" onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio icon-amarelo"><LiaStarSolid /></span></div>  
-                            <div><input type="radio" name={avaliacao} value=" Insatisfeito" onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio icon-amarelo"><LiaStarSolid/><LiaStarSolid/></span></div>
-                            <div><input type="radio" name={avaliacao} value=" Neutro"onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio icon-amarelo"><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/></span></div>
-                            <div><input type="radio" name={avaliacao} value=" Satisfeito " onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio icon-amarelo"><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/></span></div>
-                            <div><input type="radio" name={avaliacao} value=" Muito-satisfeito " onChange={(e)=>setAvaliacao(e.target.value)}/><span className="radio icon-amarelo"><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/><LiaStarSolid/></span></div>
+                            {[...Array(5)].map((estrela, index) => {
+                                const classificacaoAtual = index + 1;
+                                return (
+                                <label>
+                                    <input 
+                                        type="radio" 
+                                        value={classificacaoAtual}
+                                        name="rating"
+                                        onClick={() => setRating(classificacaoAtual)}
+
+                                    />
+                                    
+                                    <LiaStarSolid 
+                                        className="estrela" 
+                                        size={60}
+                                        color={classificacaoAtual <= (hover || rating) ? "#ffff00" : "#e4e5e9"}
+                                        onMouseEnter={() => setHover(classificacaoAtual)}
+                                        onMouseLeave={() => setHover(null)}
+                                    />
+                                </label>
+                                )
+                            })}
                         </form>
-                        <img className="img-robo" src={robo} alt="gif do robo" />
-                    
-                     </div>
                     <form className="form" onSubmit={handleSing}>
                         <textarea 
                         name="" 
